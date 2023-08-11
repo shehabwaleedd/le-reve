@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/static/css/main.64c4901d.css",
+    "main.js": "/static/js/main.7add99bd.js",
+    "static/js/787.9518340f.chunk.js": "/static/js/787.9518340f.chunk.js",
+    "static/media/Chillax-Variable.ttf": "/static/media/Chillax-Variable.35be36f56031260cf435.ttf",
+    "static/media/Chillax-Light.ttf": "/static/media/Chillax-Light.f7f01b60a17a04b97f7a.ttf",
+    "static/media/Chillax-Medium.ttf": "/static/media/Chillax-Medium.bd1fdefdb415380f3f52.ttf",
+    "static/media/Chillax-Regular.ttf": "/static/media/Chillax-Regular.50d2215815ebd5becebc.ttf",
+    "static/media/Chillax-Semibold.ttf": "/static/media/Chillax-Semibold.852911bb88ac3582fb3d.ttf",
+    "static/media/Chillax-Extralight.ttf": "/static/media/Chillax-Extralight.a4056cb2af95b3ceffc1.ttf",
+    "static/media/Chillax-Bold.ttf": "/static/media/Chillax-Bold.afec4fb98c81e138a906.ttf",
+    "static/media/Chillax-Variable.woff2": "/static/media/Chillax-Variable.9cf7581f93eb915d1c88.woff2",
+    "static/media/Chillax-Variable.woff": "/static/media/Chillax-Variable.3099c20bf00a86488453.woff",
+    "static/media/Chillax-Medium.woff": "/static/media/Chillax-Medium.529ac682ffbed5b0db05.woff",
+    "static/media/Chillax-Semibold.woff": "/static/media/Chillax-Semibold.8bb570e93f1e8cc0c286.woff",
+    "static/media/Chillax-Light.woff": "/static/media/Chillax-Light.6a1a75dde2f5a782f2f8.woff",
+    "static/media/Chillax-Regular.woff": "/static/media/Chillax-Regular.69ecbaec7d22215aa562.woff",
+    "static/media/Chillax-Bold.woff": "/static/media/Chillax-Bold.d9d078aa32cadb070c02.woff",
+    "static/media/Chillax-Extralight.woff": "/static/media/Chillax-Extralight.6ef90e26b8015b53dfc5.woff",
+    "static/media/Chillax-Medium.woff2": "/static/media/Chillax-Medium.0676d0c351cc36f9d624.woff2",
+    "static/media/Chillax-Light.woff2": "/static/media/Chillax-Light.af355b9bf98e3e002af3.woff2",
+    "static/media/Chillax-Semibold.woff2": "/static/media/Chillax-Semibold.a8a0c9fc2aa3e9bfa853.woff2",
+    "static/media/Chillax-Regular.woff2": "/static/media/Chillax-Regular.ba523d3ce8c8545f9d20.woff2",
+    "static/media/Chillax-Bold.woff2": "/static/media/Chillax-Bold.74d1529a0c0254642d50.woff2",
+    "static/media/Chillax-Extralight.woff2": "/static/media/Chillax-Extralight.278406f9c9c8fe7d844d.woff2",
+    "index.html": "/index.html",
+    "main.64c4901d.css.map": "/static/css/main.64c4901d.css.map",
+    "main.7add99bd.js.map": "/static/js/main.7add99bd.js.map",
+    "787.9518340f.chunk.js.map": "/static/js/787.9518340f.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.64c4901d.css",
+    "static/js/main.7add99bd.js"
+  ]
+}
