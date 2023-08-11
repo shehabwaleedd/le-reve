@@ -114,9 +114,9 @@
 
 .nav__logo h1 {
     font-family: 'Chillax-Bold', cursive;
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: var(--accent-color);
-    letter-spacing: 0.14rem;
+    letter-spacing: 0.3rem;
     text-transform: uppercase;
 }
 
@@ -192,7 +192,7 @@
 
 .nav__right h1 {
     font-family: 'Chillax-Bold';
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-right: 1rem;
     color: var(--accent-color);
     letter-spacing: 0.1rem;

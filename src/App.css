@@ -10,7 +10,7 @@
   --body-color: #fff7f3;
   --container-color: #f5f2f0;
   --accent-color-darker: #244224;
-  --border-color: hsl(var(--hue), var(--sat), 80%);
+  --border-color: hsl(var(--hue), var(--sat), 70%);
   --box-shadow: -4px 2px 20px 1px rgba(125, 57, 57, 0.05);
   --webkit-shadow: -4px 6px 31px 0px rgba(93, 110, 96, 0.6);
   --moz-box-shadow: -4px 6px 31px 0px rgba(93, 110, 96, 0.6);

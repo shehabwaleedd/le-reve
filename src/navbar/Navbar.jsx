@@ -37,7 +37,7 @@ const Navbar = ({ setNavOpen, navOpen, setIsMobile, setIsTablet, isTablet, isMob
             <div className="nav__container">
                 <div className="nav__left">
                     <Link className="nav__logo" to="/">
-                        <h1>Le Rêve</h1>
+                        <h1>Il Rêve</h1>
                     </Link>
                 </div>
                 <div className="nav__middle">
@@ -53,7 +53,6 @@ const Navbar = ({ setNavOpen, navOpen, setIsMobile, setIsTablet, isTablet, isMob
                     </ul>
                 </div>
                 <a href="#menu" className="nav__right">
-                    <h1>Menu</h1>
                     <svg className={`ham hamRotate ham1 ${navOpen ? 'active' : ''}`} viewBox="0 0 100 100" width="100" height="50" onClick={() => setNavOpen(!navOpen)}>
                         <path
                             className={`${navOpen ? "line open" : "line"} top`}
