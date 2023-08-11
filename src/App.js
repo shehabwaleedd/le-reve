@@ -4,6 +4,7 @@ import { AnimatePresence } from 'framer-motion';
 import Home from './pages/home/Home';
 import { useState } from 'react';
 import Navbar from './navbar/Navbar';
+import SiteHome from './pages/home/SiteHome';
 function App() {
   const location = useLocation();
   const [navOpen, setNavOpen] = useState(false);
@@ -15,7 +16,7 @@ function App() {
       <Navbar navOpen={navOpen} setNavOpen={setNavOpen} isMobile={isMobile} setIsMobile={setIsMobile} setIsTablet={setIsTablet} isTablet={isTablet}/>
       <AnimatePresence mode='wait'>
         <Routes location={location} key={location.pathname} >
-          <Route path='/' element={<Home navOpen={navOpen} setNavOpen={setNavOpen} isMobile={isMobile} setIsMobile={setIsMobile} setIsTablet={setIsTablet} isTablet={isTablet} />} />
+          <Route path='/' element={<SiteHome navOpen={navOpen} setNavOpen={setNavOpen} isMobile={isMobile} setIsMobile={setIsMobile} setIsTablet={setIsTablet} isTablet={isTablet} />} />
         </Routes>
       </AnimatePresence>
     </div>
