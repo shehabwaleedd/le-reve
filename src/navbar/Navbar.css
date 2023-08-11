@@ -113,10 +113,76 @@
 }
 
 .nav__logo h1 {
-    font-family: 'Kaushan Script', cursive;
+    font-family: 'Chillax-Bold', cursive;
     font-size: 2.5rem;
     color: var(--accent-color);
     letter-spacing: 0.14rem;
+    text-transform: uppercase;
+}
+
+.nav__middle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    position: relative;
+    z-index: 999999;
+}
+
+.nav__middle ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+    position: relative;
+    left: 0rem;
+    width: 100%;
+}
+
+.nav__middle ul li {
+    list-style: none;
+    font-family: 'Chillax-Semibold';
+    font-size: 1.5rem;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+    text-transform: uppercase;
+}
+
+.nav__middle ul li a {
+    text-decoration: none;
+    color: var(--title-color);
+}
+
+.hotel__circle {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0rem;
+}
+
+.restaurant__circle {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: #45B5AA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 0rem;
+}
+
+.nav__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .nav__right {
@@ -125,11 +191,12 @@
 }
 
 .nav__right h1 {
-    font-family: 'Lobster';
+    font-family: 'Chillax-Bold';
     font-size: 1.5rem;
     margin-right: 1rem;
     color: var(--accent-color);
     letter-spacing: 0.1rem;
+    text-transform: uppercase;
 }
 
 

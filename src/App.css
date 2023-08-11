@@ -12,12 +12,12 @@
   --accent-color-darker: #244224;
   --border-color: hsl(var(--hue), var(--sat), 80%);
   --box-shadow: -4px 2px 20px 1px rgba(125, 57, 57, 0.05);
-	--webkit-shadow: -4px 6px 31px 0px rgba(93, 110, 96, 0.6);
-	--moz-box-shadow: -4px 6px 31px 0px rgba(93, 110, 96, 0.6);
+  --webkit-shadow: -4px 6px 31px 0px rgba(93, 110, 96, 0.6);
+  --moz-box-shadow: -4px 6px 31px 0px rgba(93, 110, 96, 0.6);
   --nav-overlay-color: #1b1b1b;
-  --accent-color: #973636;
+  --accent-color: #c77586;
   --accent: var(--pink);
-  --background-color: #faf7ed;
+  --background-color: #e5e4df;
   --color-number: #999;
   --color-link-hover: #1b1b1b;
   --color-link: #b19e7f;
@@ -217,4 +217,81 @@ img {
 
 .hiddenn {
   display: none;
+}
+
+
+@font-face {
+  font-family: 'Chillax-Variable';
+  src: url('../public/fonts/Chillax-Variable.woff2') format('woff2'),
+    url('../public/fonts/Chillax-Variable.woff') format('woff'),
+    url('../public/fonts/Chillax-Variable.ttf') format('truetype');
+  font-weight: 200 700;
+  font-display: swap;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Chillax-Extralight';
+  src: url('../public/fonts/Chillax-Extralight.woff2') format('woff2'),
+    url('../public/fonts/Chillax-Extralight.woff') format('woff'),
+    url('../public/fonts/Chillax-Extralight.ttf') format('truetype');
+  font-weight: 200;
+  font-display: swap;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Chillax-Light';
+  src: url('../public/fonts/Chillax-Light.woff2') format('woff2'),
+    url('../public/fonts/Chillax-Light.woff') format('woff'),
+    url('../public/fonts/Chillax-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-display: swap;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Chillax-Regular';
+  src: url('../public/fonts/Chillax-Regular.woff2') format('woff2'),
+    url('../public/fonts/Chillax-Regular.woff') format('woff'),
+    url('../public/fonts/Chillax-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Chillax-Medium';
+  src: url('../public/fonts/Chillax-Medium.woff2') format('woff2'),
+    url('../public/fonts/Chillax-Medium.woff') format('woff'),
+    url('../public/fonts/Chillax-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-display: swap;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Chillax-Semibold';
+  src: url('../public/fonts/Chillax-Semibold.woff2') format('woff2'),
+    url('../public/fonts/Chillax-Semibold.woff') format('woff'),
+    url('../public/fonts/Chillax-Semibold.ttf') format('truetype');
+  font-weight: 600;
+  font-display: swap;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: 'Chillax-Bold';
+  src: url('../public/fonts/Chillax-Bold.woff2') format('woff2'),
+    url('../public/fonts/Chillax-Bold.woff') format('woff'),
+    url('../public/fonts/Chillax-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-display: swap;
+  font-style: normal;
 }

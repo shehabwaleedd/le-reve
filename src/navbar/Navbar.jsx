@@ -43,12 +43,12 @@ const Navbar = ({ setNavOpen, navOpen, setIsMobile, setIsTablet, isTablet, isMob
                 <div className="nav__middle">
                     <ul className="nav__list">
                         <motion.li className="nav__item">
-                            <Link className="nav__link" to="/">Hotel</Link>
                             <div className="hotel__circle"></div>
+                            <Link className="nav__link" to="/hotel">Hotel</Link>
                         </motion.li>
                         <motion.li className="nav__item">
-                            <Link className="nav__link" to="/about">Restaurant</Link>
                             <div className="restaurant__circle"></div>
+                            <Link className="nav__link" to="/restaurant">Restaurant</Link>
                         </motion.li>
                     </ul>
                 </div>
