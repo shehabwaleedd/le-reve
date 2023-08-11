@@ -1,0 +1,269 @@
+.nav {
+    position: fixed;
+    top: 0rem;
+    left: 0rem;
+    width: 100%;
+    height: 4rem;
+    z-index: 1000;
+    border: 0.7px solid var(--border-color);
+    background-color: var(--background-color);
+    transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.nav__links {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 94.9%;   
+    height: 100%;
+    transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+    z-index: 999999;
+    border-radius: 1rem;
+    border: 1px solid var(--border-color);
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 1rem;
+    background-color: var(--container-color);
+    padding: 1rem;
+}
+
+.nav__links ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1rem;
+    position: relative;
+    left: 0rem;
+    width: 90%;
+}
+
+.nav__links ul li {
+    list-style: none;
+    font-family: 'Lobster';
+    font-size: 1.5rem;
+    color: var(--text-color);
+    cursor: pointer;
+    transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.nav__links ul li a:hover {
+    color: var(--accent-color);
+}
+
+.nav__links ul li a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.nav__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 2rem;
+    position: relative;
+    z-index: 999999;
+}
+
+.ham {
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    transition: transform 400ms;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    font-size: 2rem;
+}
+
+.hamRotate.active {
+    transform: rotate(45deg);
+}
+
+.hamRotate180.active {
+    transform: rotate(180deg);
+}
+
+.line {
+    fill: none;
+    transition: stroke-dasharray 400ms, stroke-dashoffset 400ms;
+    stroke: var(--accent-color);
+    stroke-width: 2.5;
+    stroke-linecap: round;
+}
+
+.ham1 .top {
+    stroke-dasharray: 40 139;
+}
+
+.ham1 .bottom {
+    stroke-dasharray: 40 180;
+}
+
+.ham1.active .top {
+    stroke-dashoffset: -98px;
+}
+
+.ham1.active .bottom {
+    stroke-dashoffset: -138px;
+}
+
+.nav__logo h1 {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 2.5rem;
+    color: var(--accent-color);
+    letter-spacing: 0.14rem;
+}
+
+.nav__right {
+    display: flex;
+    align-items: center;
+}
+
+.nav__right h1 {
+    font-family: 'Lobster';
+    font-size: 1.5rem;
+    margin-right: 1rem;
+    color: var(--accent-color);
+    letter-spacing: 0.1rem;
+}
+
+
+@media (max-width: 935px) {
+    .nav__links  {
+        position: absolute;
+        top: 0rem;
+        left: 0rem;
+        width: 99.50%;    
+        height: 30vh;
+        background-color: var(--background-color);
+        border: 0.5px solid var(--border-color);
+    }
+    .nav__links ul {
+        display: flex;
+        gap: 1rem;
+        width: 80%;
+        position: relative;
+        padding-top: 4rem;
+    }
+    .nav__links ul li  {
+        font-size: 2rem;
+    }
+    .nav__logo h1 {
+        font-size: 1.5rem;
+        padding-right: 1rem;
+    }
+}
+
+@media (max-width: 680px) {
+    .nav {
+        width: 93%;
+        left: 0.3em;
+    }
+    .nav__links  {
+        position: absolute;
+        top: 0rem;
+        left: 0rem;
+        width: 99.50%;    
+        height: 30vh;
+        background-color: var(--background-color);
+        border: 0.5px solid var(--border-color);
+    }
+    .nav__links ul {
+        display: flex;
+        gap: 1rem;
+        width: 80%;
+        position: relative;
+        padding-top: 4rem;
+    }
+    .nav__links ul li  {
+        font-size: 2rem;
+    }
+    .nav__logo h1 {
+        font-size: 1.5rem;
+        padding-right: 1rem;
+    }
+}
+
+@media (max-width: 560px) {
+    .nav {
+        width: 90%;
+        left: 0.3em;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        z-index: 9999999;
+    }
+    .nav__logo h1 {
+        font-size: 1.2rem;
+        padding-right: 1rem;
+    }
+    .nav__right h1 {
+        font-family: 'Lobster';
+        font-size: 1em;
+    }
+    .nav__links  {
+        position: absolute;
+        top: 0rem;
+        left: 0rem;
+        width: 91.50%;    
+        height: 20vh;
+        background-color: var(--background-color);
+        z-index: 1;
+        border-radius: 1rem;
+    }
+    .nav__links ul {
+        display: flex;
+        gap: 1rem;
+        width: 81%;
+        position: relative;
+        padding-top: 4rem;
+        left: 0;
+    }
+    .nav__links ul li  {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 376px) {
+    .nav__container {
+        padding: 0 1rem;
+    }
+    .nav__links ul {
+        display: flex;
+        gap: 1rem;
+        width: 81%;
+        position: relative;
+        padding-top: 4rem;
+        left: -1.2rem;
+    }
+}
+
+@media (min-width: 1680px) {
+    .nav__links  {
+        position: absolute;
+        top: 4.4rem;
+        left: -0.05rem;
+        width: 96.4%;    
+        height: 100%;
+        background-color: var(--container-color);
+        z-index: 1;
+        border-radius: 1rem;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+    }
+    .nav__links ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+        gap: 1rem;
+        position: relative;
+        left: 0rem;
+        width: 93%;
+    }
+
+}

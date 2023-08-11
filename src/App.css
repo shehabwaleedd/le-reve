@@ -1,38 +1,220 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&family=Great+Vibes&family=Kaushan+Script&family=Lobster&display=swap');
+
+:root {
+  --header-height: 3rem;
+  --hue: 0;
+  --sat: 0%;
+  --title-color: hsl(var(--hue), var(--sat), 30%);
+  --title-color-dark: hsl(var(--hue), var(--sat), 0%);
+  --text-color: hsl(var(--hue), var(--sat), 40%);
+  --body-color: #fff7f3;
+  --container-color: #f5f2f0;
+  --accent-color-darker: #244224;
+  --border-color: hsl(var(--hue), var(--sat), 80%);
+  --box-shadow: -4px 2px 20px 1px rgba(125, 57, 57, 0.05);
+	--webkit-shadow: -4px 6px 31px 0px rgba(93, 110, 96, 0.6);
+	--moz-box-shadow: -4px 6px 31px 0px rgba(93, 110, 96, 0.6);
+  --nav-overlay-color: #1b1b1b;
+  --accent-color: #973636;
+  --accent: var(--pink);
+  --background-color: #faf7ed;
+  --color-number: #999;
+  --color-link-hover: #1b1b1b;
+  --color-link: #b19e7f;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-.App-logo {
-  height: 40vmin;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: var(--background-color);
+}
+
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  background-color: var(--background-color);
+  overscroll-behavior-x: none;
+  touch-action: pan-y;
+
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+body,
+button,
+input,
+textarea {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+
+}
+
+
+h1,
+h2,
+h3 {
+  color: var(--title-color);
+  font-weight: var(--font-semi-bold);
+  font-family: "Satoshi-Bold", sans-serif;
+}
+
+img {
   pointer-events: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ul {
+  list-style: none;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+a {
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* ========== REUSABLE CSS CLASSES ========== */
+
+
+.section {
+  padding: 1.5rem 0 2rem;
+}
+
+.section__title {
+  font-size: var(--h1-font-size);
+  color: var(--title-color);
+}
+
+.section__subtitle {
+  display: block;
+  font-size: var(--small-font-size);
+  margin-bottom: 4rem;
+  color: var(--accent-color);
+}
+
+.section__title,
+.section__subtitle {
+  text-align: center;
+}
+
+/* ========== REUSABLE CSS CLASSES ========== */
+
+.container {
+  max-width: 968px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.containered {
+  max-width: 1268px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* .grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.gridded {
+  display: grid;
+  gap: 1.5rem;
+} */
+
+
+/* ========== REUSABLE CSS CLASSES ========== */
+
+.button {
+  display: inline-block;
+  background-color: var(--nav-overlay-color);
+  color: var(--container-color);
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+  font-weight: var(--font-medium);
+  font-family: "Satoshi-Bold", sans-serif;
+  letter-spacing: 0.2rem;
+
+}
+
+
+
+.button__icon {
+  margin-left: var(--mb-0-5);
+}
+
+.button--flex {
+  display: inline-block;
   align-items: center;
+  transition: all 0.8s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.button--flex:hover {
+  background-color: var(--title-color-dark);
+  border-radius: 0rem;
+}
+
+
+::-webkit-scrollbar {
+  width: 0.8rem;
+  height: 0.5rem;
+  margin-block: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--text-color);
+  border-radius: 10px;
+
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 50px;
+}
+
+
+.grid3 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 15px;
+}
+
+.flexCenter {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+::selection {
+  background-color: var(--accent-color);
+  color: var(--container-color);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.hiddenn {
+  display: none;
 }
