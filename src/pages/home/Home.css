@@ -168,3 +168,29 @@
 .yoga {
     background-color: #FCDDA6;
 }
+
+@media (max-width: 436px) {
+    .home {
+        margin-top: 5rem;
+        min-height: 100vh;
+    }
+    .home__container {
+        flex-direction: column;
+
+    }
+    .home__left h1 {
+        font-size: 2.4rem;
+    }
+    .home__left-container span {
+        font-size: 1rem;
+    }
+    .home__left-lower {
+        margin-bottom: 4rem;
+        bottom: -1rem;
+        width: 100%;
+    }
+    .home__right-cards {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
+}

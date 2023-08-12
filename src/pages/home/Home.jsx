@@ -1,3 +1,4 @@
+
 import React from 'react'
 import './Home.css'
 import { LuHotel } from "react-icons/lu"
@@ -65,8 +66,8 @@ const Home = () => {
                                 <GiMeditation style={{ fontSize: "3rem", border: "0.6px solid var(--border-color)", borderRadius: "2rem", padding: "0.8rem", color: "var(--container-color)", backgroundColor: "var(--nav-overlay-color)" }} />
                             </div>
                             <div className="right_card-title">
-                                <h1>Yoga</h1>
-                                <BsArrowUpRight style={{ fontSize: "3.5rem", border: "1px solid var(--text-color)", borderRadius: "2rem", padding: "1rem" }} />
+                                <h1 style={{ color: "var(--container-color)" }}>Yoga</h1>
+                                <BsArrowUpRight style={{ fontSize: "3.5rem", border: "1px solid var(--container-color)", borderRadius: "2rem", padding: "1rem",  color: "var(--container-color)"}} />
                             </div>
                         </div>
                     </div>

@@ -51,3 +51,19 @@
     text-transform: uppercase;
     color: var(--text-color);
 }
+
+@media (max-width: 436px) {
+    .achievments__container {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0.2rem;
+    }
+    .achievments__card {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+    }
+    .achievments__card p {
+        font-size: 0.8rem;
+    }
+}

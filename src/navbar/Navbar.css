@@ -199,3 +199,19 @@
     text-transform: uppercase;
 }
 
+@media (max-width: 455px)  {
+
+
+    .nav__container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 100%;
+        padding: 0 2rem;
+        position: relative;
+        z-index: 999999;
+    }
+    .nav__logo h1 {
+        font-size: 1.5rem;
+    }   
+}
