@@ -114,7 +114,6 @@
     justify-content: space-between;
     width: 100%;
     height: 100%;
-
     padding: 1rem;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
@@ -192,5 +191,40 @@
     .home__right-cards {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
+    }
+}
+@media (max-width: 419px) {
+    .home {
+        margin-top: 5rem;
+        min-height: 120vh;
+    }
+}
+
+@media (max-width: 378px) {
+    .home {
+        margin-top: 5rem;
+        min-height: 122vh;
+        margin-bottom: 1rem;
+    }
+    .home__left h1 {
+        font-size: 2rem;
+    }
+    .home__left-container span {
+        font-size: 0.8rem;
+    }
+    .home__left-lower {
+        margin-bottom: 4rem;
+        bottom: -1rem;
+        width: 100%;
+    }
+    .home__right-cards {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .right_card-title h1 {
+        font-size: 1.3rem;
+    }
+    .yoga {
+        display: none;
     }
 }

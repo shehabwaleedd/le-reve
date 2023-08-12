@@ -3,6 +3,7 @@ import { useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { AnimatePresence, motion } from 'framer-motion'
 import './Navbar.css'
+import logo from "../assets/minimal-logo-for-coconut-s-tree- (2).svg"
 const Navbar = ({ setNavOpen, navOpen, setIsMobile, setIsTablet, isTablet, isMobile }) => {
     const location = useLocation();
     useEffect(() => {
@@ -37,7 +38,8 @@ const Navbar = ({ setNavOpen, navOpen, setIsMobile, setIsTablet, isTablet, isMob
             <div className="nav__container">
                 <div className="nav__left">
                     <Link className="nav__logo" to="/">
-                        <h1>Il Rêve</h1>
+                        <h1 className='logo__name'>Il Rêve</h1>
+                        <img src={logo} alt="" className='svg' style={{width: "15rem"}}/>
                     </Link>
                 </div>
                 <div className="nav__middle">
