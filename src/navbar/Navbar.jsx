@@ -38,7 +38,7 @@ const Navbar = ({ setNavOpen, navOpen, setIsMobile, setIsTablet, isTablet, isMob
             <div className="nav__container">
                 <div className="nav__left">
                     <Link className="nav__logo" to="/">
-                        <h1 className='logo__name'>Il Rêve</h1>
+                        <h1 className='logo__name'>Le Rêvee</h1>
                         <img src={logo} alt="" className='svg' style={{width: "15rem"}}/>
                     </Link>
                 </div>
