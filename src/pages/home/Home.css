@@ -147,32 +147,37 @@
 }
 
 .hotel {
-    background-color: #FF878D;
+    background-color: #c77586;
 }
 
 .restaurant {
-    background-color: #c77586;
+    background-color: #FF878D;
 }
 
 .cooking {
-    background-color: #FF878D;
-}
-
-.painting {
     background-color: #c77586;
 }
 
-.yoga {
+.painting {
     background-color: #FF878D;
 }
 
+.yoga {
+    background-color: #c77586;
+}
+
 @media (max-width: 436px) {
+    .main {
+        display: flex;
+        flex-direction: column;
+        gap: 6rem;
+    }
     .home {
-        margin-top: 5rem;
-        min-height: 100vh;
+        min-height: 127vh;
     }
 
     .home__container {
+        padding-top: 7rem;
         flex-direction: column;
 
     }
@@ -193,7 +198,10 @@
 
     .home__right-cards {
         display: grid;
-        grid-template-columns: repeat(5, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .yoga {
+        display: none;
     }
 }
 

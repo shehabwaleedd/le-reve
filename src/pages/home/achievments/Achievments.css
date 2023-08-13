@@ -54,8 +54,9 @@
 
 @media (max-width: 436px) {
     .achievments__container {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     padding: 0.2rem;
+    height: 50%;
     }
     .achievments__card {
         flex-direction: column;

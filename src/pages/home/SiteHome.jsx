@@ -4,7 +4,7 @@ import Achievments from './achievments/Achievments'
 
 const SiteHome = () => {
     return (
-        <main>
+        <main className='main'>
             <Home />
             <Achievments />
         </main>
