@@ -42,7 +42,7 @@
     font-family: 'Chillax-Medium';
     letter-spacing: 0.15rem;
     text-transform: uppercase;
-    color: var(--nav-overlay-color);
+    color: var(--container-color);
 }
 
 .achievments__card p {

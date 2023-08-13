@@ -40,6 +40,7 @@
     text-transform: capitalize;
     margin-bottom: 1rem;
 }
+
 .home__left-lower {
     display: flex;
     flex-direction: row;
@@ -77,14 +78,10 @@
     letter-spacing: 0.15rem;
 }
 
-.left-lower-btns .learn-more-btn {
-    background-color: #45B5AA;
-}
-
 .home__left h1 {
     font-size: 3rem;
     color: var(--accent-color);
-    margin-bottom: 1rem;    
+    margin-bottom: 1rem;
     font-family: 'Chillax-Bold';
     letter-spacing: 0.2rem;
     text-transform: uppercase;
@@ -150,22 +147,23 @@
 }
 
 .hotel {
-    background-color: var(--accent-color);
+    background-color: #FF878D;
 }
 
 .restaurant {
-    background-color: #45B5AA;
+    background-color: #c77586;
 }
 
 .cooking {
-    background-color: #a4b6dd;
+    background-color: #FF878D;
 }
 
 .painting {
-    background-color: #c094cc;
+    background-color: #c77586;
 }
+
 .yoga {
-    background-color: #FCDDA6;
+    background-color: #FF878D;
 }
 
 @media (max-width: 436px) {
@@ -173,31 +171,45 @@
         margin-top: 5rem;
         min-height: 100vh;
     }
+
     .home__container {
         flex-direction: column;
 
     }
+
     .home__left h1 {
         font-size: 2.4rem;
     }
+
     .home__left-container span {
         font-size: 1rem;
     }
+
     .home__left-lower {
         margin-bottom: 4rem;
         bottom: -1rem;
         width: 100%;
     }
+
     .home__right-cards {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
     }
 }
+
 @media (max-width: 419px) {
     .home {
         margin-top: 5rem;
         min-height: 120vh;
     }
+}
+
+@media (max-width: 394px) {
+    .home {
+        margin-top: 5rem;
+        min-height: 135vh;
+    }
+    
 }
 
 @media (max-width: 378px) {
@@ -206,24 +218,30 @@
         min-height: 122vh;
         margin-bottom: 1rem;
     }
+
     .home__left h1 {
         font-size: 2rem;
     }
+
     .home__left-container span {
         font-size: 0.8rem;
     }
+
     .home__left-lower {
         margin-bottom: 4rem;
         bottom: -1rem;
         width: 100%;
     }
+
     .home__right-cards {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
     }
+
     .right_card-title h1 {
         font-size: 1.3rem;
     }
+
     .yoga {
         display: none;
     }

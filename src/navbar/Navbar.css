@@ -236,6 +236,20 @@
     }
 }
 
+@media (max-width: 395px) {
+    .nav__middle ul li {
+        list-style: none;
+        font-family: 'Chillax-Semibold';
+        font-size: 0.8rem;
+    }
+    .svg {
+        padding: 1.5rem;
+    }
+    .nav {
+        width: 105%;
+    }
+}
+
 @media (max-width: 378px) {
     .nav__middle ul li {
         list-style: none;

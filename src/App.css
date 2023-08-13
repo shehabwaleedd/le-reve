@@ -6,7 +6,7 @@
   --sat: 0%;
   --title-color: hsl(var(--hue), var(--sat), 30%);
   --title-color-dark: hsl(var(--hue), var(--sat), 0%);
-  --text-color: hsl(var(--hue), var(--sat), 40%);
+  --text-color: hsl(var(--hue), var(--sat), 55%);
   --body-color: #fff7f3;
   --container-color: #f5f2f0;
   --accent-color-darker: #244224;
@@ -15,9 +15,9 @@
   --webkit-shadow: -4px 6px 31px 0px rgba(93, 110, 96, 0.6);
   --moz-box-shadow: -4px 6px 31px 0px rgba(93, 110, 96, 0.6);
   --nav-overlay-color: #1b1b1b;
-  --accent-color: #c77586;
+  --accent-color: #FF878D;
   --accent: var(--pink);
-  --background-color: #e5e4df;
+  --background-color: #1b1b1b;
   --color-number: #999;
   --color-link-hover: #1b1b1b;
   --color-link: #b19e7f;
