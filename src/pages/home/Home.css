@@ -70,9 +70,11 @@
     height: 100%;
     gap: 1rem;
     padding: 1rem;
-    background-color: var(--accent-color);
+    background-color: #dea09b;
     cursor: pointer;
+    text-transform: uppercase;
     transition: all 0.3s ease-in-out;
+    border-radius: 0.3rem;
     color: var(--container-color);
     font-family: 'Chillax-Medium';
     letter-spacing: 0.15rem;
@@ -147,7 +149,7 @@
 }
 
 .hotel {
-    background-color: #c77586;
+    background-color: #f2bab5;
 }
 
 .restaurant {
@@ -155,7 +157,7 @@
 }
 
 .cooking {
-    background-color: #c77586;
+    background-color: #f2bab5;
 }
 
 .painting {
@@ -163,7 +165,7 @@
 }
 
 .yoga {
-    background-color: #c77586;
+    background-color: #f2bab5;
 }
 
 @media (max-width: 436px) {
