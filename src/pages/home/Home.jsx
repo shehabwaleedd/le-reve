@@ -27,7 +27,7 @@ const Home = () => {
                     <div className="home__right-cards">
                         <div className="home__right-card hotel">
                             <div className="right_card-icon">
-                                <LuHotel style={{ fontSize: "3rem", border: "0.6px solid var(--border-color)", borderRadius: "2rem", padding: "0.8rem", color: "var(--container-color)", backgroundColor: "var(--nav-overlay-color)" }} />
+                                <LuHotel style={{ fontSize: "3rem", borderRadius: "2rem", padding: "0.8rem", color: "var(--container-color)", backgroundColor: "var(--nav-overlay-color)" }} />
                             </div>
                             <div className="right_card-title">
                                 <h1 style={{ color: "var(--container-color)" }}>Hotel</h1>
@@ -36,7 +36,7 @@ const Home = () => {
                         </div>
                         <div className="home__right-card restaurant">
                             <div className="right_card-icon">
-                                <IoRestaurantOutline style={{ fontSize: "3rem", border: "0.6px solid var(--border-color)", borderRadius: "2rem", padding: "0.8rem", color: "var(--container-color)", backgroundColor: "var(--nav-overlay-color)" }} />
+                                <IoRestaurantOutline style={{ fontSize: "3rem", borderRadius: "2rem", padding: "0.8rem", color: "var(--container-color)", backgroundColor: "var(--nav-overlay-color)" }} />
                             </div>
                             <div className="right_card-title">
                                 <h1 style={{ color: "var(--container-color)" }}>Restaurant</h1>
@@ -45,7 +45,7 @@ const Home = () => {
                         </div>
                         <div className="home__right-card cooking">
                             <div className="right_card-icon">
-                                <PiCookingPot style={{ fontSize: "3rem", border: "0.6px solid var(--border-color)", borderRadius: "2rem", padding: "0.8rem", color: "var(--container-color)", backgroundColor: "var(--nav-overlay-color)" }} />
+                                <PiCookingPot style={{ fontSize: "3rem",borderRadius: "2rem", padding: "0.8rem", color: "var(--container-color)", backgroundColor: "var(--nav-overlay-color)" }} />
                             </div>
                             <div className="right_card-title">
                                 <h1 style={{ color: "var(--container-color)" }}>Cooking Class</h1>
@@ -54,7 +54,7 @@ const Home = () => {
                         </div>
                         <div className="home__right-card painting">
                             <div className="right_card-icon">
-                                <IoColorPaletteOutline style={{ fontSize: "3rem", border: "0.6px solid var(--border-color)", borderRadius: "2rem", padding: "0.8rem", color: "var(--container-color)", backgroundColor: "var(--nav-overlay-color)" }} />
+                                <IoColorPaletteOutline style={{ fontSize: "3rem", borderRadius: "2rem", padding: "0.8rem", color: "var(--container-color)", backgroundColor: "var(--nav-overlay-color)" }} />
                             </div>
                             <div className="right_card-title">
                                 <h1 style={{ color: "var(--container-color)" }}>Painting Class</h1>
@@ -63,7 +63,7 @@ const Home = () => {
                         </div>
                         <div className="home__right-card yoga">
                             <div className="right_card-icon">
-                                <GiMeditation style={{ fontSize: "3rem", border: "0.6px solid var(--border-color)", borderRadius: "2rem", padding: "0.8rem", color: "var(--container-color)", backgroundColor: "var(--nav-overlay-color)" }} />
+                                <GiMeditation style={{ fontSize: "3rem", borderRadius: "2rem", padding: "0.8rem", color: "var(--container-color)", backgroundColor: "var(--nav-overlay-color)" }} />
                             </div>
                             <div className="right_card-title">
                                 <h1 style={{ color: "var(--container-color)" }}>Yoga</h1>
