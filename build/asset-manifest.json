@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.ff012d55.css",
-    "main.js": "/static/js/main.5bd46162.js",
+    "main.css": "/static/css/main.9f051908.css",
+    "main.js": "/static/js/main.a67faeac.js",
     "static/js/787.9518340f.chunk.js": "/static/js/787.9518340f.chunk.js",
     "static/media/Chillax-Variable.ttf": "/static/media/Chillax-Variable.35be36f56031260cf435.ttf",
     "static/media/Chillax-Light.ttf": "/static/media/Chillax-Light.f7f01b60a17a04b97f7a.ttf",
@@ -26,12 +26,12 @@
     "static/media/Chillax-Bold.woff2": "/static/media/Chillax-Bold.74d1529a0c0254642d50.woff2",
     "static/media/Chillax-Extralight.woff2": "/static/media/Chillax-Extralight.278406f9c9c8fe7d844d.woff2",
     "index.html": "/index.html",
-    "main.ff012d55.css.map": "/static/css/main.ff012d55.css.map",
-    "main.5bd46162.js.map": "/static/js/main.5bd46162.js.map",
+    "main.9f051908.css.map": "/static/css/main.9f051908.css.map",
+    "main.a67faeac.js.map": "/static/js/main.a67faeac.js.map",
     "787.9518340f.chunk.js.map": "/static/js/787.9518340f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ff012d55.css",
-    "static/js/main.5bd46162.js"
+    "static/css/main.9f051908.css",
+    "static/js/main.a67faeac.js"
   ]
 }
