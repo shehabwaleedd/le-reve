@@ -5,6 +5,7 @@
     justify-content: center;
     height: 75vh;
     border-bottom: 1px solid var(--border-color);
+    width: 100%;
 }
 
 .home__container {
@@ -14,6 +15,8 @@
     justify-content: center;
     width: 100%;
     height: 100%;
+    border-right: 1px solid var(--text-color);
+    border-left: 1px solid var(--text-color);
 }
 
 .home__left {
@@ -21,7 +24,8 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 90%;
+    width: 100%;
+
 }
 
 .home__left-container {
@@ -29,7 +33,8 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: center;
-    width: 90%;
+    width: 100%;
+    padding-left: 2rem;
 }
 
 .home__left-container span {
@@ -168,91 +173,3 @@
     background-color: #f2bab5;
 }
 
-@media (max-width: 436px) {
-    .main {
-        display: flex;
-        flex-direction: column;
-        gap: 6rem;
-    }
-    .home {
-        min-height: 127vh;
-    }
-
-    .home__container {
-        padding-top: 7rem;
-        flex-direction: column;
-
-    }
-
-    .home__left h1 {
-        font-size: 2.4rem;
-    }
-
-    .home__left-container span {
-        font-size: 1rem;
-    }
-
-    .home__left-lower {
-        margin-bottom: 4rem;
-        bottom: -1rem;
-        width: 100%;
-    }
-
-    .home__right-cards {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-    }
-    .yoga {
-        display: none;
-    }
-}
-
-@media (max-width: 419px) {
-    .home {
-        margin-top: 5rem;
-        min-height: 120vh;
-    }
-}
-
-@media (max-width: 394px) {
-    .home {
-        margin-top: 5rem;
-        min-height: 135vh;
-    }
-    
-}
-
-@media (max-width: 378px) {
-    .home {
-        margin-top: 5rem;
-        min-height: 122vh;
-        margin-bottom: 1rem;
-    }
-
-    .home__left h1 {
-        font-size: 2rem;
-    }
-
-    .home__left-container span {
-        font-size: 0.8rem;
-    }
-
-    .home__left-lower {
-        margin-bottom: 4rem;
-        bottom: -1rem;
-        width: 100%;
-    }
-
-    .home__right-cards {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-    }
-
-    .right_card-title h1 {
-        font-size: 1.3rem;
-    }
-
-    .yoga {
-        display: none;
-    }
-}
