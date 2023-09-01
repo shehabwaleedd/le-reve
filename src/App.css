@@ -190,6 +190,21 @@ img {
   margin-right: auto;
 }
 
+@media (max-width: 1054px) {
+  .containered {
+    max-width: 920px;
+  }
+}
+@media (max-width: 954px) {
+  .containered {
+    max-width: 720px;
+  }
+}
+@media (max-width: 754px) {
+  .containered {
+    max-width: 580px;
+  }
+}
 @media (max-width: 454px) {
   .containered {
     max-width: 320px;
