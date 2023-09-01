@@ -4,6 +4,7 @@ import { useLocation } from 'react-router-dom';
 import NotFound from '../pages/notFound/NotFound';
 import SiteHome from '../pages/home/SiteHome';
 import Hotel from '../pages/hotel/Hotel';
+import About from '../pages/about/About';
 const Routers = ({ navOpen }) => {
     const location = useLocation();
     const routeConfig = [
@@ -12,6 +13,8 @@ const Routers = ({ navOpen }) => {
             element: <SiteHome key={location.pathname} navOpen={navOpen} />
         },
         { path: '/hotel', element: <Hotel /> },
+        { path: '/about', element: <About /> },
+
         { path: '*', element: <NotFound /> },
     ];
 

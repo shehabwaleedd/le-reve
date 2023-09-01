@@ -1,6 +1,7 @@
 import React from 'react'
 import "./MenuArrowsHome.scss"
 import arrow from "../../assets/arrow.png"
+import { Link } from 'react-router-dom'
 
 const MenuArrowsHome = () => {
     return (
@@ -13,11 +14,11 @@ const MenuArrowsHome = () => {
                     <img src={arrow} alt="" />
                     <img src={arrow} alt="" />
                 </div>
-                <div className="menuArrowsHome__right">
+                <Link to="/menu" className="menuArrowsHome__right">
                     <span>
                         Restaurant Menu 
                     </span>
-                </div>
+                </Link>
             </div>
         </div>
     )
