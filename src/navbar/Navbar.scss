@@ -137,13 +137,24 @@
         .nav__mobile_toggle {
             display: flex;
             justify-content: flex-end;
-            align-items: flex-end;
+            align-items: center;
             position: relative;
             z-index: 999999;
             right: 0rem;
             border-right: 1px solid var(--text-color);
             @media (min-width: 500px) {
                 display: none;
+            }
+            span {
+                font-size: 1.5rem;
+                color: var(--text-color);
+                cursor: pointer;
+                transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+                text-transform: lowercase;
+                letter-spacing: 0.1rem;
+                position: relative;
+                right: -1.5rem;
+                font-family: 'DancingScript-Bold';
             }
             .ham {  
                 display: flex;

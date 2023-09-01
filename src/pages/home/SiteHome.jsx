@@ -8,6 +8,8 @@ import ContactUpper from '../../components/contactUpper/ContactUpper'
 import ContactLower from '../../components/contactLower/ContactLower'
 import ContactsUpper from '../../components/contactsUpper/ContactsUpper'
 import ContactsLower from '../../components/contactsLower/ContactsLower'
+import DeliveryUpper from '../../components/deliveryUpper/DeliveryUpper'
+import DeliveryLower from '../../components/deliverLower/DeliveryLower'
 
 const SiteHome = () => {
     return (
@@ -17,6 +19,8 @@ const SiteHome = () => {
             <LowerAboutUs />
             <MenuHome />
             <MenuArrowsHome />
+            <DeliveryUpper />
+            <DeliveryLower />
             <ContactUpper />
             <ContactLower />
             <ContactsUpper />
