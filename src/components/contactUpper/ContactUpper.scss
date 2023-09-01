@@ -9,12 +9,13 @@
     .contactUpper__container {
         display: grid;
         grid-template-columns: 1fr 2fr;
-        align-items: center;
+        align-items: flex-end;
         justify-content: center;
         width: 100%;
         height: 100%;
         border-right: 1px solid var(--text-color);
         border-left: 1px solid var(--text-color);
+        padding-bottom: 2rem;
         .contactUpper__left {
             display: flex;
             flex-direction: column;
@@ -22,8 +23,8 @@
             justify-content: center;
             width: 100%;
             padding-left: 2rem;
-            h1 {
-                font-size: 3rem;
+            h2 {
+                font-size: 2rem;
                 color: var(--accent-color);
                 margin-bottom: 1rem;
                 font-family: 'DancingScript-Bold';
@@ -36,7 +37,7 @@
         .contactUpper__right {
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: flex-end;
             flex-direction: column;
             width: 100%;
             height: 100%;
