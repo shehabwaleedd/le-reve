@@ -6,6 +6,8 @@ import MenuHome from '../../components/menuHome/MenuHome'
 import MenuArrowsHome from '../../components/menuArrowsHome/MenuArrowsHome'
 import ContactUpper from '../../components/contactUpper/ContactUpper'
 import ContactLower from '../../components/contactLower/ContactLower'
+import ContactsUpper from '../../components/contactsUpper/ContactsUpper'
+import ContactsLower from '../../components/contactsLower/ContactsLower'
 
 const SiteHome = () => {
     return (
@@ -17,6 +19,8 @@ const SiteHome = () => {
             <MenuArrowsHome />
             <ContactUpper />
             <ContactLower />
+            <ContactsUpper />
+            <ContactsLower />
         </main>
     )
 }
