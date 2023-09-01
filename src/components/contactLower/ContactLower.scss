@@ -6,6 +6,9 @@
     width: 100%;
     height: 60vh;
     border-bottom: 1px solid var(--text-color);
+    @media (max-width: 1450px) {
+        height: 70vh;
+    }
     .contactLower__container {
         display: grid;
         grid-template-columns: 1fr 2fr;
@@ -24,6 +27,9 @@
             height: 60vh;
             position: relative;
             border-right: 1px solid var(--text-color);
+            @media (max-width: 1450px) {
+                height: 70vh;
+            }
             .contactLower__left_imgs {
                 display: flex;
                 flex-direction: column;
@@ -46,8 +52,10 @@
             justify-content: center;
             flex-direction: column;
             width: 100%;
-            height: 100%;
-
+            height: 60vh;
+            @media (max-width: 1450px) {
+                height: 70vh;
+            }
             .contact__lower {
                 display: flex;
                 flex-direction: column;
