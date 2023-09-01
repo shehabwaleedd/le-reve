@@ -13,6 +13,7 @@ function App() {
 
   return (
     <div className="App">
+      <div className="noise"></div>
       <Navbar navOpen={navOpen} setNavOpen={setNavOpen} isMobile={isMobile} setIsMobile={setIsMobile} setIsTablet={setIsTablet} isTablet={isTablet}/>
       <AnimatePresence mode='wait'>
         <Routes location={location} key={location.pathname} >
