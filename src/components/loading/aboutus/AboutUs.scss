@@ -1,0 +1,92 @@
+.aboutus {
+    display: flex;
+    flex-direction: column;
+    height: 30vh;
+    width: 100%;
+    border-bottom: 1px solid var(--border-color);
+    @media (max-width: 1452px) {
+        height: 45vh;
+    }
+    @media (max-width: 1024px) {
+        height: 50vh;
+    }
+    .aboutus__container {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        border-right: 1px solid var(--text-color);
+        border-left: 1px solid var(--text-color);
+        .aboutus__left {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+            width: 100%;
+            padding-left: 2rem;
+            h1 {
+                font-size: 3rem;
+                color: var(--accent-color);
+                margin-bottom: 1rem;
+                font-family: 'DancingScript-Bold';
+                letter-spacing: 0.2rem;
+                text-transform: capitalize;
+                width: 30%;
+                text-align: left;
+            }
+            .book__now {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 100%;
+                position: relative;
+                bottom: -10rem;
+                button {
+                    padding: 1rem 2rem;
+                    border: 0.5px solid var(--text-color);
+                    background-color: transparent;
+                    color: var(--text-color);
+                    font-family: 'Chillax-Medium';
+                    font-size: 1rem;
+                    letter-spacing: 0.2rem;
+                    text-transform: capitalize;
+                    cursor: pointer;
+                    transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+                    &:hover {
+                        background-color: var(--accent-color);
+                        color: var(--text-color);
+                    }
+                }
+            }
+        }
+        .aboutus__right {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+            span {
+                font-size: 1rem;
+                color: var(--title-color);
+                font-family: 'Chillax-Medium';
+                letter-spacing: 0.1rem;
+                text-transform: capitalize;
+                margin-bottom: 1rem;
+                width: 95%;
+            }
+            p {
+                font-size: 1rem;
+                color: var(--title-color);
+                font-family: 'Chillax-Medium';
+                letter-spacing: 0.1rem;
+                text-transform: capitalize;
+                margin-bottom: 1rem;
+                width: 95%;
+            }
+        }
+    }
+}
