@@ -6,6 +6,10 @@
     height: 78vh;
     border-bottom: 1px solid var(--border-color);
     width: 100%;
+    @media (max-width: 454px) {
+        width: 100%;
+        height: 100%;
+    }
     .home__container {
         display: grid;
         grid-template-columns:  1fr 2fr;
@@ -15,6 +19,14 @@
         height: 78vh;
         border-right: 1px solid var(--text-color);
         border-left: 1px solid var(--text-color);
+        @media (max-width: 454px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+        }
         .home__left {
             display: flex;
             flex-direction: column;
