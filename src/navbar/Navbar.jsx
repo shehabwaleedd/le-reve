@@ -51,7 +51,7 @@ const Navbar = ({ setNavOpen, navOpen, setIsMobile, setIsTablet, isTablet, isMob
                             </motion.li>
                             <motion.li className="nav__item">
                                 <div className="restaurant__circle"></div>
-                                <Link className="nav__link" to="/restaurant">Restaurant</Link>
+                                <Link className="nav__link" to="/restaurant">Menu</Link>
                             </motion.li>
                             <motion.li className="nav__item">
                                 <Link className="nav__link" to="/about">About</Link>
