@@ -4,6 +4,7 @@ import LowerAboutUs from '../../components/lowerAboutUs/LowerAboutUs'
 import AboutBoss from './aboutComponents/aboutBoss/AboutBoss'
 import AboutBossLower from './aboutComponents/aboutBossLower/AboutBossLower'
 import AboutBeach from './aboutComponents/aboutBeach/AboutBeach'
+import AboutBeachLower from './aboutComponents/aboutBeachLower/AboutBeachLower'
 
 const About = () => {
     return (
@@ -14,6 +15,7 @@ const About = () => {
                 <AboutBoss />
                 <AboutBossLower />
                 <AboutBeach />
+                <AboutBeachLower />
             </div>
         </section>
     )

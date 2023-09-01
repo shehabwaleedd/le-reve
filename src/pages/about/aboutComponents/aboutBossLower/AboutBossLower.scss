@@ -27,6 +27,21 @@
                 height: 100%;
                 object-fit: cover;
                 object-position: center 10%;
+                -webkit-filter: hue-rotate(304deg);
+                filter: contrast(54%) invert(11%) saturate(90%) sepia(29%);
+                @media (max-width: 1450px) {
+                    object-position: 30% 45%; 
+                }
+                @media (max-width: 1000px) {
+                    -webkit-filter: hue-rotate(0deg);
+                filter: contrast(100%) invert(0%) saturate(100%) sepia(0%); 
+                }
+                transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);                
+            }
+            &:hover img {
+                transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);  
+                -webkit-filter: hue-rotate(0deg);
+                filter: contrast(100%) invert(0%) saturate(100%) sepia(0%); 
             }
         }
     }
