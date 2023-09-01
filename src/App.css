@@ -190,6 +190,12 @@ img {
   margin-right: auto;
 }
 
+@media (max-width: 454px) {
+  .containered {
+    max-width: 320px;
+  }
+}
+
 /* .grid {
   display: grid;
   gap: 1.5rem;

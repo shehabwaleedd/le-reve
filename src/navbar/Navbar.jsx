@@ -4,7 +4,7 @@ import { Link, useLocation } from 'react-router-dom'
 import { AnimatePresence, motion } from 'framer-motion'
 import './Navbar.scss'
 import logo from "../assets/minimal-logo-for-coconut-s-tree- (2).svg"
-const Navbar = ({ setNavOpen, navOpen, setIsMobile, setIsTablet, isTablet, isMobile }) => {
+const Navbar = ({ setNavOpen, navOpen, setIsMobile, setIsTablet }) => {
     const location = useLocation();
     useEffect(() => {
         const handleResize = () => {
@@ -62,7 +62,8 @@ const Navbar = ({ setNavOpen, navOpen, setIsMobile, setIsTablet, isTablet, isMob
                         </ul>
                     </div>
 
-                    {/* <a href="#menu" className="nav__right">
+                </div>
+                <div className="nav__mobile_toggle">
                     <svg className={`ham hamRotate ham1 ${navOpen ? 'active' : ''}`} viewBox="0 0 100 100" width="100" height="50" onClick={() => setNavOpen(!navOpen)}>
                         <path
                             className={`${navOpen ? "line open" : "line"} top`}
@@ -74,7 +75,6 @@ const Navbar = ({ setNavOpen, navOpen, setIsMobile, setIsTablet, isTablet, isMob
                             className={`${navOpen ? "line open" : "line"} bottom`}
                             d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
                     </svg>
-                </a> */}
                 </div>
             </div>
         </motion.nav>
