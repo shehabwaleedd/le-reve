@@ -1,0 +1,48 @@
+.hotel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    gap: 3rem;
+    h1 {
+        font-size: 10vw;
+        text-transform: capitalize;
+        color: var(--accent-color);
+        font-family: 'DancingScript-Bold';
+        letter-spacing: 0.2rem;
+        text-align: center;
+        @media (max-width: 754px) {
+            font-size: 7vw;
+        }
+        @media (max-width: 454px) {
+            font-size: 5vw;
+        }
+    }
+    p {
+        font-size: 2vw;
+        text-transform: capitalize;
+        color: var(--accent-color);
+        font-family: 'DancingScript-Bold';
+        letter-spacing: 0.2rem;
+        text-align: center;
+    }
+    a {
+        span {
+            font-size: 1.5rem;
+            color: var(--title-color);
+            font-family: 'Chillax-Medium';
+            letter-spacing: 0.1rem;
+            text-transform: capitalize;
+            margin-bottom: 1rem;
+            width: 95%;
+            @media (max-width: 454px) {
+                font-size: 1rem;
+            }
+            &:hover {
+                color: var(--accent-color);
+            }
+        }
+    }
+}
