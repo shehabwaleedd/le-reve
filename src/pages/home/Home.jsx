@@ -1,6 +1,6 @@
 import React from 'react'
 import './Home.scss'
-import main from "../../assets/main2.jpg"
+import main from "../../assets/main.jpg"
 const Home = () => {
     return (
         <section className='home'>

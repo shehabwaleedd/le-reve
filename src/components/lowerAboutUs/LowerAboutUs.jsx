@@ -1,5 +1,5 @@
 import React from 'react'
-import lower from "../../assets/lower.jpg"
+import lower from "../../assets/urban-gyllstrom-MaWMfm-HCqQ-unsplash.jpg"
 import "./LowerAboutUs.scss"
 
 const LowerAboutUs = () => {

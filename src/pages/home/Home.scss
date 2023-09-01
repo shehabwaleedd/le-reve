@@ -12,7 +12,7 @@
         align-items: center;
         justify-content: flex-start;
         width: 100%;
-        height: 100%;
+        height: 78vh;
         border-right: 1px solid var(--text-color);
         border-left: 1px solid var(--text-color);
         .home__left {
@@ -21,12 +21,14 @@
             align-items: center;
             justify-content: space-between;
             width: 100%;    
+            height: 78vh;
             .home__left-container {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
                 width: 100%;
+                height: 78vh;
                 padding-left: 1.7rem;
                 span {
                     font-size: 1rem;
@@ -44,6 +46,7 @@
                     font-family: 'DancingScript-Bold';
                     letter-spacing: 0.2rem;
                     text-transform: capitalize;
+                    padding-top: 6rem;
  
                 }
             }
@@ -54,9 +57,9 @@
                 width: 100%;
                 height: 100%;
                 position: relative;
-                bottom: -10rem;
+                bottom: -5rem;
                 @media (max-width: 1468px) {
-                    bottom: -5rem;
+                    bottom: 0rem;
                 }
                 button {
                     padding: 1rem 2rem;
@@ -78,14 +81,21 @@
             justify-content: flex-start;
             align-items: flex-start;
             width: 100%;
-            height: 100%;
+            height: 78vh;
             img {
-                width: 101%;
+                width: 100%;
                 height: 100%;
+                object-position: 70% 65%; 
                 object-fit: cover;
                 -webkit-filter: hue-rotate(304deg);
                 filter: contrast(54%) invert(11%) saturate(90%) sepia(29%);
-
+                @media (max-width: 1450px) {
+                    object-position: 30% 45%; 
+                }
+                @media (max-width: 1000px) {
+                    -webkit-filter: hue-rotate(0deg);
+                filter: contrast(100%) invert(0%) saturate(100%) sepia(0%); 
+                }
                 transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);                
             }
             &:hover img {
