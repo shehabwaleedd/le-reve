@@ -16,6 +16,12 @@
         height: 100%;
         border-left: 1px solid var(--text-color);
         border-right: 1px solid var(--text-color);
+        @media (max-width: 454px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
         .menuArrowsHome__left {
             display: flex;
             align-items: center;
@@ -29,6 +35,9 @@
                 height: 50%;
                 object-fit: contain;
             }
+            @media (max-width: 454px) {
+                display: none;
+            }
         }
         .menuArrowsHome__right {
             display: flex;
@@ -36,6 +45,9 @@
             justify-content: flex-start;
             height: 100%;
             width: 100%;
+            @media (max-width: 454px) {
+                justify-content: center;
+            }
             span {
                 padding-right: 1rem;
                 font-size: 1.2rem;
