@@ -6,7 +6,7 @@
     width: 100%;
     height: 30vh;
     border-bottom: 1px solid var(--text-color);
-    @media (max-width: 454px) {
+    @media (max-width: 954px) {
         height: 100%;
     }
     .contactsLower__container {
@@ -18,7 +18,7 @@
         height: 30vh;
         border-right: 1px solid var(--text-color);
         border-left: 1px solid var(--text-color);
-        @media (max-width: 454px) {
+        @media (max-width: 954px) {
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -45,7 +45,7 @@
                 text-transform: capitalize;
                 width: 100%;
                 text-align: left;
-                @media (max-width: 454px) {
+                @media (max-width: 954px) {
                     font-size: 1.5rem;
                     width: 100%;
                 }

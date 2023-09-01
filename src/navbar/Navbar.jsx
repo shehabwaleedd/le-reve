@@ -39,7 +39,9 @@ const Navbar = ({ setNavOpen, navOpen, setIsMobile, setIsTablet }) => {
                 <div className="nav__left">
                     <Link className="nav__logo" to="/">
                         <h1 className='logo__name'>il Rêve</h1>
-                        <img src={logo} alt="" className='svg' style={{ width: "15rem" }} />
+                        <div className="nav__logo_img">
+                            <img src={logo} alt="" className='svg' style={{ width: "15rem" }} />
+                        </div>
                     </Link>
                 </div>
                 <div className="nav__right">

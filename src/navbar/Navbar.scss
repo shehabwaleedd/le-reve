@@ -55,19 +55,33 @@
                         display: none;
                     }
 
-                    .svg {
+                    .nav__logo_img {
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        padding: 0.1rem;
+                        padding: 1.1rem;
                         width: 100%;
-                        height: 4rem;
-
-                        img {
-                            width: 50%;
-                            height: 50%;
-                            object-fit: cover;
+                        height: 0rem;
+                        .svg {
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 0.1rem;
+                            width: 100%;
+                            height: 4rem;
+    
+                            img {
+                                width: 50%;
+                                height: 50%;
+                                object-fit: cover;
+                            }
                         }
+                    }
+                }
+                @media (min-width: 500px) {
+                    .svg {
+                        display: none;
+
                     }
                 }
             }
@@ -93,8 +107,8 @@
                 gap: 5rem;
                 width: 100%;
 
-                @media (max-width: 456px) {
-                    gap: 0;
+                @media (min-width: 456px) and (max-width: 950px) {
+                    gap: 2rem;
                 }
 
                 li {
@@ -128,6 +142,9 @@
             z-index: 999999;
             right: 0rem;
             border-right: 1px solid var(--text-color);
+            @media (min-width: 500px) {
+                display: none;
+            }
             .ham {  
                 display: flex;
                 justify-content: center;
