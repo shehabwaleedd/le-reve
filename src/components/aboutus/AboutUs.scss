@@ -20,6 +20,14 @@
         border-right: 1px solid var(--text-color);
         border-left: 1px solid var(--text-color);
         padding-bottom: 1rem;
+        @media (max-width: 454px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+        }
         .aboutus__left {
             display: flex;
             flex-direction: column;
@@ -27,6 +35,7 @@
             justify-content: space-between;
             width: 100%;
             padding-left: 2rem;
+
             h1 {
                 font-size: 3rem;
                 color: var(--accent-color);
@@ -36,30 +45,10 @@
                 text-transform: capitalize;
                 width: 30%;
                 text-align: left;
-            }
-            .book__now {
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                width: 100%;
-                height: 100%;
-                position: relative;
-                bottom: -10rem;
-                button {
-                    padding: 1rem 2rem;
-                    border: 0.5px solid var(--text-color);
-                    background-color: transparent;
-                    color: var(--text-color);
-                    font-family: 'Chillax-Medium';
-                    font-size: 1rem;
-                    letter-spacing: 0.2rem;
-                    text-transform: capitalize;
-                    cursor: pointer;
-                    transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
-                    &:hover {
-                        background-color: var(--accent-color);
-                        color: var(--text-color);
-                    }
+                @media (max-width: 454px) {
+                    font-size: 2rem;
+                    width: 100%;
+                    padding-top: 2rem;
                 }
             }
         }
@@ -78,6 +67,10 @@
                 text-transform: capitalize;
                 margin-bottom: 1rem;
                 width: 95%;
+                @media (max-width: 454px) {
+                    font-size: 0.8rem;
+
+                }
             }
             p {
                 font-size: 1rem;
@@ -87,6 +80,10 @@
                 text-transform: capitalize;
                 margin-bottom: 1rem;
                 width: 95%;
+                @media (max-width: 454px) {
+                    font-size: 0.8rem;
+                    
+                }
             }
         }
     }
