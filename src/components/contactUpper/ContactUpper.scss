@@ -16,6 +16,7 @@
         border-right: 1px solid var(--text-color);
         border-left: 1px solid var(--text-color);
         padding-bottom: 2rem;
+
         .contactUpper__left {
             display: flex;
             flex-direction: column;
@@ -32,6 +33,7 @@
                 text-transform: capitalize;
                 width: 80%;
                 text-align: left;
+                
             }
         }
         .contactUpper__right {
