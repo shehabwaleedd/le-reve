@@ -18,6 +18,14 @@
         height: 100%;
         border-right: 1px solid var(--text-color);
         border-left: 1px solid var(--text-color);
+        @media (max-width: 454px) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+        }
         .contactLower__left {
             display: flex;
             flex-direction: column;
@@ -29,6 +37,9 @@
             border-right: 1px solid var(--text-color);
             @media (max-width: 1450px) {
                 height: 70vh;
+            }
+            @media (max-width: 454px) {
+                display: none;
             }
             .contactLower__left_imgs {
                 display: flex;
@@ -56,6 +67,7 @@
             @media (max-width: 1450px) {
                 height: 70vh;
             }
+            
             .contact__lower {
                 display: flex;
                 flex-direction: column;
@@ -65,6 +77,9 @@
                 width: 100%;
                 height: 100%;
                 padding-left: 2rem;
+                @media (max-width: 456px) {
+                    padding-left: 0;
+                }
                 .contact__lower_form {
                     display: flex;
                     align-items: center;
@@ -83,6 +98,7 @@
                         height: 100%;
 
                         .conlocon__input {
+                            
                             input {
                                 width: 34rem;
                                 height: 100%;
@@ -98,7 +114,9 @@
                                 outline: none;
 
                                 @media (max-width: 456px) {
+                                    padding: 0 rem;
                                     font-size: 1rem;
+                                    width: 100%;
                                 }
 
                                 &::placeholder {
@@ -108,6 +126,9 @@
                                     font-weight: 400;
                                     letter-spacing: 0.2rem;
                                     text-transform: uppercase;
+                                    @media (max-width: 456px) {
+                                        font-size: 1rem;
+                                    }
                                 }
                             }
 
@@ -125,7 +146,10 @@
                                 letter-spacing: 0.2rem;
                                 outline: none;
                                 text-transform: uppercase;
-
+                                @media (max-width: 456px) {
+                                    font-size: 1rem;
+                                    width: 100%;
+                                }
                                 &::placeholder {
                                     color: var(--title-color);
                                     font-family: 'Chillax-Medium';
@@ -133,6 +157,9 @@
                                     font-weight: 400;
                                     letter-spacing: 0.2rem;
                                     text-transform: uppercase;
+                                    @media (max-width: 456px) {
+                                        font-size: 1rem;
+                                    }
                                 }
 
                                 @media (max-width: 456px) {
@@ -141,6 +168,9 @@
                                     &::placeholder {
                                         font-size: 1.5rem;
                                         width: 70%;
+                                        @media (max-width: 456px) {
+                                            font-size: 1rem;
+                                        }
                                     }
                                 }
                             }
@@ -162,6 +192,10 @@
                         background-color: var(--accent-color);
                         color: var(--container-color);
                         border: 0.5px solid var(--container-color);
+                    }
+                    @media (max-width: 454px) {
+                        font-size: 0.8rem;
+                        margin-left: 0.5rem;
                     }
                 }
             }
