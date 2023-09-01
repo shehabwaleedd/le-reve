@@ -10,11 +10,11 @@ const MenuHome = () => {
                     <h1>
                         Menu
                     </h1>
-                    <Link to="/menu" className='book__now'>
+                    {/* <Link to="/menu" className='book__now'>
                         <span className="menuHome__button">
                             View Menu
                         </span>
-                    </Link>
+                    </Link> */}
                 </div>
                 <div className="menuHome__right">
                     <span>

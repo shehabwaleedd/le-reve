@@ -1,0 +1,164 @@
+.contactLower {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 60vh;
+    border-bottom: 1px solid var(--text-color);
+    .contactLower__container {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        border-right: 1px solid var(--text-color);
+        border-left: 1px solid var(--text-color);
+        .contactLower__left {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            width: 100%;
+            height: 60vh;
+            position: relative;
+            border-right: 1px solid var(--text-color);
+            .contactLower__left_imgs {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: flex-start;
+                width: 100%;
+                height: 100%;
+                padding: 0em 0; 
+                position: relative;
+                img {
+                    width: 100%;
+                    height: 50%;
+                    object-fit: cover;
+                }
+            }
+        }
+        .contactLower__right {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+
+            .contact__lower {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                gap: 2rem;
+                width: 100%;
+                height: 100%;
+                padding-left: 2rem;
+                .contact__lower_form {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 2rem;
+                    width: 100%;
+                    height: 100%;
+
+                    .conlo__container {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: center;
+                        gap: 1rem;
+                        width: 100%;
+                        height: 100%;
+
+                        .conlocon__input {
+                            input {
+                                width: 34rem;
+                                height: 100%;
+                                padding: 1rem;
+                                border: none;
+                                border-bottom: 0.3px solid var(--title-color);
+                                background-color: var(--background-color);
+                                color: var(--title-color);
+                                font-family: 'Chillax-Medium';
+                                font-size: 1.5rem;
+                                letter-spacing: 0.2rem;
+                                text-transform: uppercase;
+                                outline: none;
+
+                                @media (max-width: 456px) {
+                                    font-size: 1rem;
+                                }
+
+                                &::placeholder {
+                                    color: var(--title-color);
+                                    font-family: 'Chillax-Medium';
+                                    font-size: 1.5rem;
+                                    font-weight: 400;
+                                    letter-spacing: 0.2rem;
+                                    text-transform: uppercase;
+                                }
+                            }
+
+                            textarea {
+                                width: 34rem;
+                                height: 100%;
+                                padding: 1rem;
+                                border: none;
+                                border-bottom: 0.3px solid var(--title-color);
+                                background-color: var(--background-color);
+                                color: var(--title-color);
+                                font-family: 'Chillax-Medium';
+                                font-size: 1.5rem;
+                                font-weight: 400;
+                                letter-spacing: 0.2rem;
+                                outline: none;
+                                text-transform: uppercase;
+
+                                &::placeholder {
+                                    color: var(--title-color);
+                                    font-family: 'Chillax-Medium';
+                                    font-size: 1.5rem;
+                                    font-weight: 400;
+                                    letter-spacing: 0.2rem;
+                                    text-transform: uppercase;
+                                }
+
+                                @media (max-width: 456px) {
+                                    font-size: 1.5rem;
+
+                                    &::placeholder {
+                                        font-size: 1.5rem;
+                                        width: 70%;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                button {
+                    position: relative;
+                    bottom: -2rem;
+                    padding: 1rem 2rem;
+                    border: 0.5px solid var(--text-color);
+                    background-color: transparent;
+                    color: var(--text-color);
+                    font-family: 'Chillax-Medium';
+                    font-size: 1rem;
+                    letter-spacing: 0.2rem;
+                    text-transform: capitalize;
+                    cursor: pointer;
+                    transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+                    &:hover {
+                        background-color: var(--accent-color);
+                        color: var(--container-color);
+                        border: 0.5px solid var(--container-color);
+                    }
+                }
+            }
+        }
+    }
+}
