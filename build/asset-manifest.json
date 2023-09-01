@@ -1,16 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.9f051908.css",
-    "main.js": "/static/js/main.a67faeac.js",
+    "main.css": "/static/css/main.cb5fdb2f.css",
+    "main.js": "/static/js/main.2abaf63d.js",
     "static/js/787.9518340f.chunk.js": "/static/js/787.9518340f.chunk.js",
+    "static/media/lower.jpg": "/static/media/lower.07834d1ec44da2381703.jpg",
     "static/media/Chillax-Variable.ttf": "/static/media/Chillax-Variable.35be36f56031260cf435.ttf",
+    "static/media/DancingScript-Bold.ttf": "/static/media/DancingScript-Bold.1500641507a22454f6d9.ttf",
+    "static/media/DancingScript-Regular.ttf": "/static/media/DancingScript-Regular.14608e75a6c641f7ab46.ttf",
+    "static/media/DancingScript-Variable.ttf": "/static/media/DancingScript-Variable.994c175ce44b12795d05.ttf",
+    "static/media/main2.jpg": "/static/media/main2.305d6aeb2444ab20aee9.jpg",
+    "static/media/noise.png": "/static/media/noise.af3bb2238a52a6079456.png",
     "static/media/Chillax-Light.ttf": "/static/media/Chillax-Light.f7f01b60a17a04b97f7a.ttf",
     "static/media/Chillax-Medium.ttf": "/static/media/Chillax-Medium.bd1fdefdb415380f3f52.ttf",
     "static/media/Chillax-Regular.ttf": "/static/media/Chillax-Regular.50d2215815ebd5becebc.ttf",
     "static/media/Chillax-Semibold.ttf": "/static/media/Chillax-Semibold.852911bb88ac3582fb3d.ttf",
     "static/media/Chillax-Extralight.ttf": "/static/media/Chillax-Extralight.a4056cb2af95b3ceffc1.ttf",
     "static/media/Chillax-Bold.ttf": "/static/media/Chillax-Bold.afec4fb98c81e138a906.ttf",
+    "static/media/DancingScript-Variable.woff2": "/static/media/DancingScript-Variable.e69cf99ab0dec70d24ee.woff2",
     "static/media/Chillax-Variable.woff2": "/static/media/Chillax-Variable.9cf7581f93eb915d1c88.woff2",
+    "static/media/DancingScript-Bold.woff": "/static/media/DancingScript-Bold.f1693bd9938b181ba487.woff",
+    "static/media/DancingScript-Regular.woff": "/static/media/DancingScript-Regular.fa55530492e5f38dfd2e.woff",
+    "static/media/DancingScript-Variable.woff": "/static/media/DancingScript-Variable.7f874a7718816851a872.woff",
+    "static/media/DancingScript-Bold.woff2": "/static/media/DancingScript-Bold.92b460ac3ab9fc59e09f.woff2",
+    "static/media/DancingScript-Regular.woff2": "/static/media/DancingScript-Regular.fe9986bb92e60d9bd276.woff2",
     "static/media/Chillax-Variable.woff": "/static/media/Chillax-Variable.3099c20bf00a86488453.woff",
     "static/media/minimal-logo-for-coconut-s-tree- (2).svg": "/static/media/minimal-logo-for-coconut-s-tree- (2).3bb6f46c7473cc2d4fea825deaf0d8ce.svg",
     "static/media/Chillax-Medium.woff": "/static/media/Chillax-Medium.529ac682ffbed5b0db05.woff",
@@ -26,12 +38,12 @@
     "static/media/Chillax-Bold.woff2": "/static/media/Chillax-Bold.74d1529a0c0254642d50.woff2",
     "static/media/Chillax-Extralight.woff2": "/static/media/Chillax-Extralight.278406f9c9c8fe7d844d.woff2",
     "index.html": "/index.html",
-    "main.9f051908.css.map": "/static/css/main.9f051908.css.map",
-    "main.a67faeac.js.map": "/static/js/main.a67faeac.js.map",
+    "main.cb5fdb2f.css.map": "/static/css/main.cb5fdb2f.css.map",
+    "main.2abaf63d.js.map": "/static/js/main.2abaf63d.js.map",
     "787.9518340f.chunk.js.map": "/static/js/787.9518340f.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9f051908.css",
-    "static/js/main.a67faeac.js"
+    "static/css/main.cb5fdb2f.css",
+    "static/js/main.2abaf63d.js"
   ]
 }
