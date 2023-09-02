@@ -5,6 +5,7 @@ import NotFound from '../pages/notFound/NotFound';
 import SiteHome from '../pages/home/SiteHome';
 import Hotel from '../pages/hotel/Hotel';
 import About from '../pages/about/About';
+import Contact from '../pages/contact/Contact';
 const Routers = ({ navOpen }) => {
     const location = useLocation();
     const routeConfig = [
@@ -14,6 +15,7 @@ const Routers = ({ navOpen }) => {
         },
         { path: '/hotel', element: <Hotel /> },
         { path: '/about', element: <About /> },
+        { path: '/contact', element: <Contact /> },
 
         { path: '*', element: <NotFound /> },
     ];

@@ -50,10 +50,11 @@
                 height: 100%;
                 padding: 0em 0; 
                 position: relative;
-                img {
+                iframe {
                     width: 100%;
-                    height: 50%;
+                    height: 100%;
                     object-fit: cover;
+                    border: none;
                 }
             }
         }

@@ -5,7 +5,6 @@ import AboutBoss from './aboutComponents/aboutBoss/AboutBoss'
 import AboutBossLower from './aboutComponents/aboutBossLower/AboutBossLower'
 import AboutBeach from './aboutComponents/aboutBeach/AboutBeach'
 import AboutBeachLower from './aboutComponents/aboutBeachLower/AboutBeachLower'
-import "./About.scss"
 
 const About = () => {
     return (
