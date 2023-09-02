@@ -10,7 +10,7 @@ const AboutBeachLower = () => {
                 <div className="aboutBeachLower__left">
                     <div className="aboutBeachLower__left_imgs">
                         <img src={shape} alt="" />
-                        <img src={shape} alt="" />
+                        <img src={shape} alt="" className='secondshape'/>
                     </div>
                 </div>
                 <div className="aboutBeachLower__right">

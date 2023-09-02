@@ -44,6 +44,7 @@
                     font-size: 2rem;
                     width: 100%;
                     padding-top: 2rem;
+                    padding-left: 1rem;
                 }
             }
         }
@@ -65,9 +66,10 @@
                 width: 100%;
                 text-align: left;
                 @media (max-width: 454px) {
-                    font-size: 1rem;
+                    font-size: 0.9rem;
                     width: 100%;
                     padding-top: 2rem;
+                    padding-left: 1rem;
                 }
             }
         }

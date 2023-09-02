@@ -6,6 +6,12 @@
     width: 100%;
     height: 55vh;
     border-bottom: 1px solid var(--text-color);
+
+    @media (max-width: 454px) {
+        width: 100%;
+        height: 100%;
+    }
+
     .aboutBeachLower__container {
         display: grid;
         grid-template-columns: 1fr 2fr;
@@ -15,6 +21,7 @@
         height: 100%;
         border-right: 1px solid var(--text-color);
         border-left: 1px solid var(--text-color);
+
         @media (max-width: 454px) {
             display: flex;
             flex-direction: column;
@@ -23,6 +30,7 @@
             width: 100%;
             height: 100%;
         }
+
         .aboutBeachLower__left {
             display: flex;
             flex-direction: column;
@@ -32,12 +40,15 @@
             height: 55vh;
             position: relative;
             border-right: 1px solid var(--text-color);
+
             @media (max-width: 1450px) {
                 height: 65vh;
             }
+
             @media (max-width: 954px) {
                 display: none;
             }
+
             .aboutBeachLower__left_imgs {
                 display: flex;
                 flex-direction: column;
@@ -45,8 +56,9 @@
                 justify-content: flex-start;
                 width: 100%;
                 height: 100%;
-                padding: 0em 0; 
+                padding: 0em 0;
                 position: relative;
+
                 img {
                     width: 100%;
                     height: 50%;
@@ -54,6 +66,7 @@
                 }
             }
         }
+
         .aboutBeachLower__right {
             display: flex;
             flex-direction: column;
@@ -62,25 +75,32 @@
             width: 100%;
             height: 55vh;
             position: relative;
+            @media (max-width: 450px) {
+                height: 100%;
+                width: 100%;
+            }
             img {
                 width: 100%;
                 height: 100%;
                 object-fit: cover;
                 object-position: center 10%;
-                transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);  
+                transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
                 filter: contrast(54%) invert(11%) saturate(90%) sepia(29%);
+
                 @media (max-width: 1450px) {
-                    object-position: 30% 45%; 
+                    object-position: 30% 45%;
                 }
+
                 @media (max-width: 1000px) {
                     -webkit-filter: hue-rotate(0deg);
-                filter: contrast(100%) invert(0%) saturate(100%) sepia(0%); 
+                    filter: contrast(100%) invert(0%) saturate(100%) sepia(0%);
                 }
             }
+
             &:hover img {
-                transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);  
+                transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
                 -webkit-filter: hue-rotate(0deg);
-                filter: contrast(100%) invert(0%) saturate(100%) sepia(0%); 
+                filter: contrast(100%) invert(0%) saturate(100%) sepia(0%);
             }
         }
     }
