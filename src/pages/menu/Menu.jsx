@@ -1,8 +1,17 @@
 import React from 'react'
+import Breakfast from './menuComponents/breakfast/Breakfast'
+import MainCourse from './menuComponents/mainCourse/MainCourse'
+import Appetizers from './menuComponents/appetizers/Appetizers'
+import Salads from './menuComponents/salads/Salads'
 
 const Menu = () => {
     return (
-        <div>Menu</div>
+        <section>
+            <Breakfast />
+            <Appetizers />
+            <MainCourse />
+            <Salads />
+        </section>
     )
 }
 
