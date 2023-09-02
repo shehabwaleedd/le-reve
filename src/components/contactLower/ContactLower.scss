@@ -12,6 +12,9 @@
     @media (max-width: 950px) {
         height: 90vh;
     }
+    @media (max-width: 376px) {
+        height: 100%;
+    }
     .contactLower__container {
         display: grid;
         grid-template-columns: 1fr 2fr;
@@ -45,6 +48,9 @@
                 height: 80vh;
                 border-right: none;
             }
+            @media (max-width: 376px) {
+                height: 100%;
+            }
             .contactLower__left_imgs {
                 display: flex;
                 flex-direction: column;
@@ -74,6 +80,9 @@
             }
             @media (max-width: 450px) {
                 height: 80vh;
+            }
+            @media (max-width: 376px) {
+                height: 100%;
             }
             .contact__lower {
                 display: flex;

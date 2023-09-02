@@ -10,6 +10,10 @@
         height: 45vh;
         padding-top: 4rem;
     }
+    @media (max-width: 376px) {
+        height: 60vh;
+        padding-top: 0;
+    }
     .contactUpper__container {
         display: grid;
         grid-template-columns: 1fr 2fr;

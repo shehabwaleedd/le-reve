@@ -9,6 +9,9 @@
     @media (max-width: 954px) {
         height: 30vh;
     }
+    @media (max-width: 376px) {
+        height: 20vh;
+    }
     .menuArrowsHome__container {
         display: grid;
         grid-template-columns: 5fr 1fr;
@@ -55,6 +58,9 @@
             @media (max-width: 454px) {
                 justify-content: center;
             }
+            @media (max-width: 406px) {
+                padding-bottom: 0;
+            }
             span {
                 padding-right: 1rem;
                 font-size: 1.2rem;
@@ -62,6 +68,9 @@
                 font-family: 'Chillax-Medium';
                 letter-spacing: 0.1rem;
                 text-transform: capitalize;
+                @media (max-width: 406px) {
+                    padding-right: 0;
+                }
             }
         }
     }
