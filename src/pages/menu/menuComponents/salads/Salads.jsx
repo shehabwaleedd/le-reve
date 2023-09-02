@@ -1,5 +1,6 @@
 import React from 'react'
 import saladItems from './Data'
+import './Salads.scss'
 const Salads = () => {
     const midpoint = Math.ceil(saladItems.length / 2);
 
@@ -8,11 +9,11 @@ const Salads = () => {
     const rightItems = saladItems.slice(midpoint);
 
     return (
-        <div className='breakfast'>
-            <div className='breakfast__content containered'>
-                <h2> Appetizers </h2>
-                <div className='breakfast__container'>
-                    <div className='breakfast__left'>
+        <div className='salads'>
+            <div className='salads__content containered'>
+                <h2> Salads </h2>
+                <div className='salads__container'>
+                    <div className='salads__left'>
                         {leftItems.map((item, index) => (
                             <div className='menu__formula' key={index}>
                                 <h3>{item.name}</h3>
@@ -23,7 +24,7 @@ const Salads = () => {
                             </div>
                         ))}
                     </div>
-                    <div className='breakfast__right'>
+                    <div className='salads__right'>
                         {rightItems.map((item, index) => (
                             <div className='menu__formula' key={index}>
                                 <h3>{item.name}</h3>
