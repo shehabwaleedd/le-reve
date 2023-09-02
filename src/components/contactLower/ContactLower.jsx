@@ -1,6 +1,5 @@
 import React from 'react'
 import "./ContactLower.scss"
-import shape from "../../assets/shape.png"
 import { useState, useRef } from 'react';
 import emailjs from '@emailjs/browser';
 
