@@ -6,6 +6,10 @@
     width: 100%;
     height: 30vh;
     border-bottom: 1px solid var(--text-color);
+    @media (max-width: 767px) {
+        width: 100%;
+        height: 100%;
+    }
     .aboutBoss__container {
         display: grid;
         grid-template-columns: 1fr 2fr;

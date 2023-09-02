@@ -75,6 +75,12 @@
             width: 100%;
             text-align: left;
             padding-left: 2rem;
+            @media (max-width: 754px) {
+                font-size: 0.9rem;
+                width: 100%;
+                padding-top: 2rem;
+                padding-left: 1rem;
+            }
             @media (max-width: 454px) {
                 font-size: 0.9rem;
                 width: 100%;
