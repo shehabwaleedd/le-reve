@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import { FiArrowUpRight } from 'react-icons/fi'
 import "./NavComponents.scss"
 
-const NavComponents = ({ navOpen }) => {
+const NavComponents = () => {
     return (
         <motion.div className="nav__links-links" initial={{ opacity: 0, y: -100, transition: { delay: 0.3, staggerChildren: 3.5, duration: 0.5, ease: [0.42, 0, 0.58, 1] } }} animate={{ opacity: 1, y: 0, transition: { delay: 0.5, staggerChildren: 3.5, duration: 0.7, ease: [0.42, 0, 0.58, 1] } }} exit={{ opacity: 0, y: -500, transition: { delay: 0.3, velocity: 2, staggerChildren: 1.5, duration: 1, ease: [0.42, 0, 0.58, 1] } }}>
             <div className="nav__links_container">
@@ -24,20 +24,14 @@ const NavComponents = ({ navOpen }) => {
                     <div className="navbar-social-media">
                         <ul>
                             <li>
-                                <Link to="https://www.instagram.com/shehabwaleedd/" target="__blank" rel="noreferrer">
+                                <Link to="https://www.instagram.com/ilreve/" target="__blank" rel="noreferrer">
                                     <span>Instagram</span>
                                     <FiArrowUpRight style={{color: "var(--container-color)"}}/>
                                 </Link>
                             </li>
                             <li>
-                                <Link to="https://www.linkedin.com/in/shehabwaleedd/" target="__blank" rel="noreferrer">
-                                    <span>LinkedIn</span>
-                                    <FiArrowUpRight style={{color: "var(--container-color)"}}/>
-                                </Link>
-                            </li>
-                            <li>
-                                <Link to="https://www.linkedin.com/in/shehabwaleedd/" target="__blank" rel="noreferrer">
-                                    <span>Twitter</span>
+                                <Link to="https://www.facebook.com/in/ilreve/" target="__blank" rel="noreferrer">
+                                    <span>Facebook</span>
                                     <FiArrowUpRight style={{color: "var(--container-color)"}}/>
                                 </Link>
                             </li>
