@@ -9,6 +9,9 @@
     @media (max-width: 1450px) {
         height: 70vh;
     }
+    @media (max-width: 450px) {
+        height: 90vh;
+    }
     .contactLower__container {
         display: grid;
         grid-template-columns: 1fr 2fr;
@@ -38,8 +41,9 @@
             @media (max-width: 1450px) {
                 height: 70vh;
             }
-            @media (max-width: 954px) {
-                display: none;
+            @media (max-width: 450px) {
+                height: 80vh;
+                border-right: none;
             }
             .contactLower__left_imgs {
                 display: flex;
@@ -68,7 +72,9 @@
             @media (max-width: 1450px) {
                 height: 70vh;
             }
-            
+            @media (max-width: 450px) {
+                height: 80vh;
+            }
             .contact__lower {
                 display: flex;
                 flex-direction: column;
