@@ -4,8 +4,14 @@ import { Link, useLocation } from 'react-router-dom'
 import { AnimatePresence, motion } from 'framer-motion'
 import './Navbar.scss'
 import logo from "../assets/minimal-logo-for-coconut-s-tree- (2).svg"
+import NavComponents from './NavComponents'
 const Navbar = ({ setNavOpen, navOpen, setIsMobile, setIsTablet }) => {
     const location = useLocation();
+    useEffect(() => {
+
+        setNavOpen(false); // Close the navbar when the location changes
+        // eslint-disable-next-line 
+    }, [location, setNavOpen]);
     useEffect(() => {
         const handleResize = () => {
             setIsMobile(window.innerWidth <= 468);
@@ -34,9 +40,9 @@ const Navbar = ({ setNavOpen, navOpen, setIsMobile, setIsTablet }) => {
         };
     }, [setIsTablet]);
     return (
-        <motion.nav className={`nav`} >
-            <div className="nav__container containered">
-                <div className="nav__left">
+        <motion.nav className="nav">
+            <div className="nav__container containered" style={{ borderBottom: navOpen ? " 1px solid var(--container-color)" : " none" }}>
+                <div className="nav__left" style={{ borderLeft: navOpen ? " 1px solid var(--container-color)" : " 1px solid var(--text-color)", borderRight: navOpen ? " 1px solid var(--container-color)" : " 1px solid var(--text-color)" }}>
                     <Link className="nav__logo" to="/">
                         <h1 className='logo__name'>il Rêve</h1>
                         <div className="nav__logo_img">
@@ -44,7 +50,7 @@ const Navbar = ({ setNavOpen, navOpen, setIsMobile, setIsTablet }) => {
                         </div>
                     </Link>
                 </div>
-                <div className="nav__right">
+                <div className="nav__right" >
                     <div className="nav__middle_left">
                         <ul className="nav__list">
                             <motion.li className="nav__item">
@@ -65,8 +71,8 @@ const Navbar = ({ setNavOpen, navOpen, setIsMobile, setIsTablet }) => {
                     </div>
 
                 </div>
-                <div className="nav__mobile_toggle">
-                    <span>Menu</span>
+                <div className="nav__mobile_toggle" style={{ borderRight: navOpen ? " 1px solid var(--container-color)" : " 1px solid var(--text-color)" }}>
+                    <span style={{ color: navOpen ? "var(--container-color)" : "var(--title-color)" }}>Menu</span>
                     <svg className={`ham hamRotate ham1 ${navOpen ? 'active' : ''}`} viewBox="0 0 100 100" width="100" height="50" onClick={() => setNavOpen(!navOpen)}>
                         <path
                             className={`${navOpen ? "line open" : "line"} top`}
@@ -79,7 +85,17 @@ const Navbar = ({ setNavOpen, navOpen, setIsMobile, setIsTablet }) => {
                             d="m 30,67 h 40 c 12.796276,0 15.357889,-11.717785 15.357889,-26.851538 0,-15.133752 -4.786586,-27.274118 -16.667516,-27.274118 -11.88093,0 -18.499247,6.994427 -18.435284,17.125656 l 0.252538,40" />
                     </svg>
                 </div>
+
             </div>
+            <div className="nav-overlay" style={{
+                top: navOpen ? "0%" : "-100%",
+                transitionDuration: navOpen ? "3s" : "2s",
+                height: navOpen ? "100vh" : "0vh",
+                width: navOpen ? "100vw" : "100vw",
+
+            }}>
+            </div>
+            {navOpen && <NavComponents navOpen={navOpen} />}
         </motion.nav>
     )
 }

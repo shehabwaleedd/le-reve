@@ -5,10 +5,20 @@
     width: 100%;
     height: 4rem;
     z-index: 1000;
-    border-bottom: 0.3px solid var(--text-color);
+    border-bottom: 1px solid var(--text-color);
     background-color: var(--background-color);
     transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
 
+    .nav-overlay {
+        position: absolute;
+        z-index: -1;
+        top: 0;
+        bottom: 0;
+        width: 100%;
+        height: 17vh;
+        transition: all 4s cubic-bezier(0.16, 1, 0.3, 1);
+        background-color: var(--accent-color);
+    }
     .nav__container {
         display: grid;
         grid-template-columns: 1fr 2fr;
@@ -185,6 +195,9 @@
                 stroke: var(--accent-color);
                 stroke-width: 2.5;
                 stroke-linecap: round;
+            }
+            .line.open {
+                stroke: var(--container-color);
             }
 
             .ham1 .top {
