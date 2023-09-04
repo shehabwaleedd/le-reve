@@ -7,7 +7,13 @@ import Hotel from '../pages/hotel/Hotel';
 import About from '../pages/about/About';
 import Contact from '../pages/contact/Contact';
 import Menu from '../pages/menu/Menu';
+import Admin from '../pages/admin/Admin';
+import { Navigate } from 'react-router-dom';
+import { useUserAuth } from "../login/authContext/AuthContext"
+;
+import Login from '../login/login/Login';
 const Routers = ({ navOpen }) => {
+    const { user } = useUserAuth();
     const location = useLocation();
     const routeConfig = [
         {
@@ -18,6 +24,9 @@ const Routers = ({ navOpen }) => {
         { path: '/about', element: <About /> },
         { path: '/contact', element: <Contact /> },
         { path: '/menu', element: <Menu /> },
+        { path: '/login', element: <Login /> },
+        { path: "/admin", element: user ? <Admin /> :  <Navigate to="/login" replace /> },
+
 
         { path: '*', element: <NotFound /> },
     ];

@@ -62,7 +62,7 @@ const ContactLower = () => {
             <div className="contactLower__container containered">
                 <div className="contactLower__left">
                     <div className="contactLower__left_imgs">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3968.3566451843994!2d80.45716427498809!3d5.945491294039006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae237a9938e08ff%3A0xc0a0e76cf6a104ff!2sMirissa%20Heights!5e0!3m2!1sde!2seg!4v1693617324337!5m2!1sde!2seg" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3968.3566451843994!2d80.45716427498809!3d5.945491294039006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae237a9938e08ff%3A0xc0a0e76cf6a104ff!2sMirissa%20Heights!5e0!3m2!1sde!2seg!4v1693617324337!5m2!1sde!2seg" width="600" title="map" height="450" allowFullScreen={true} loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
                 <div className="contactLower__right">
