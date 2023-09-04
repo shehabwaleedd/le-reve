@@ -1,0 +1,91 @@
+.admin {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    width: 100%;
+    border-bottom: 1px solid var(--text-color);
+    .admin__container {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        border-right: 1px solid var(--text-color);
+        border-left: 1px solid var(--text-color);
+        .admin__left {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+            width: 100%;
+            height: 100%;
+            border-right: 1px solid var(--text-color);
+            h1 {
+                margin-top: 5rem;
+                font-size: 3rem;
+                color: var(--accent-color);
+                margin-bottom: 1rem;
+                font-family: 'DancingScript-Bold';
+                letter-spacing: 0.2rem;
+                text-transform: capitalize;
+                width: 30%;
+                text-align: left;
+                @media (max-width: 454px) {
+                    font-size: 2rem;
+                    width: 100%;
+                    padding-top: 2rem;
+                }
+            }
+            .admin__left__container {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+
+                width: 100%;
+
+                ul {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    justify-content: flex-start;
+                    width: 100%;
+                    height: 100%;
+                    li {
+                        display: flex;
+                        flex-direction: column;
+                        align-items: flex-start;
+                        justify-content: flex-start;
+                        width: 100%;
+                        height: 100%;
+                        padding: 1rem 1rem 1rem 0.3rem;
+                        border-bottom: 1px solid var(--text-color);
+                        cursor: pointer;
+                        &:last-child {
+                            border-bottom: none;
+                        }
+                        h3 {
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            justify-content: flex-start;
+                            width: 100%;
+                            height: 100%;
+                            text-decoration: none;
+                            color: var(--title-color);
+                            font-size: 1.5rem;
+                            font-family:"Chillax-Medium", sans-serif;
+                            letter-spacing: 0.1rem;
+                            text-transform: capitalize;
+                            &:hover {
+                                color: var(--accent-color);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

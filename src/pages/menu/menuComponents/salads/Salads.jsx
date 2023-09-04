@@ -1,12 +1,27 @@
-import React from 'react'
-import saladItems from './Data'
+import React, { useState, useEffect } from 'react'
 import './Salads.scss'
-const Salads = () => {
-    const midpoint = Math.ceil(saladItems.length / 2);
+import { db } from '../../../../firebase-config';
+import { collection, getDocs } from 'firebase/firestore';
 
-    // Split the saladItems array into left and right arrays
-    const leftItems = saladItems.slice(0, midpoint);
-    const rightItems = saladItems.slice(midpoint);
+const Salads = () => {
+    const [saladsList, setSaladsList] = useState([]);
+
+    const fetchSaladsPosts = async () => {
+        try {
+            const saladsSnapshot = await getDocs(collection(db, "menu/salads/items"));
+            const saladsPosts = saladsSnapshot.docs.map((doc) => ({ ...doc.data(), id: doc.id }));
+            setSaladsList(saladsPosts);
+        } catch (error) {
+            console.log("Error fetching salads posts:", error);
+        }
+    };
+    const midpoint = Math.ceil(saladsList.length / 2);
+    const leftItems = saladsList.slice(0, midpoint);
+    const rightItems = saladsList.slice(midpoint);
+
+    useEffect(() => {
+        fetchSaladsPosts();
+    }, []);
 
     return (
         <div className='salads'>

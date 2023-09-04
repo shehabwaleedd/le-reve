@@ -1,13 +1,29 @@
-import React from 'react'
-import mainCourseItems from './Data'
+import React, { useState, useEffect } from 'react'
 import './MainCourse.scss'
+import { db } from '../../../../firebase-config';
+import { collection, getDocs } from 'firebase/firestore';
 
 const MainCourse = () => {
-    const midpoint = Math.ceil(mainCourseItems.length / 2);
+    const [mainCourseList, setMainCourseList] = useState([]);
+    const fetchMainCoursePosts = async () => {
+        try {
+            const mainCourseSnapshot = await getDocs(collection(db, "menu/mainCourse/items"));
+            const mainCoursePosts = mainCourseSnapshot.docs.map((doc) => ({ ...doc.data(), id: doc.id }));
+            setMainCourseList(mainCoursePosts);
+        } catch (error) {
+            console.log("Error fetching main course posts:", error);
+        }
+    };
+
+    const midpoint = Math.ceil(mainCourseList.length / 2);
 
     // Split the saladItems array into left and right arrays
-    const leftItems = mainCourseItems.slice(0, midpoint);
-    const rightItems = mainCourseItems.slice(midpoint);
+    const leftItems = mainCourseList.slice(0, midpoint);
+    const rightItems = mainCourseList.slice(midpoint);
+
+    useEffect(() => {
+        fetchMainCoursePosts();
+    }, []);
 
     return (
         <div className='mainCourse'>

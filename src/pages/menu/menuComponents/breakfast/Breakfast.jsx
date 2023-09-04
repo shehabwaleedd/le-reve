@@ -1,13 +1,29 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import './Breakfast.scss';
-import breakfastItems from "./Data"
+import { db } from '../../../../firebase-config';
+import { collection,  getDocs } from 'firebase/firestore';
 
 const Breakfast = () => {
-    const midpoint = Math.ceil(breakfastItems.length / 2);
+    const [breakfastList, setBreakfastList] = useState([]);
+
+    const fetchBreakfastPosts = async () => {
+        try {
+            const breakfastSnapshot = await getDocs(collection(db, "menu/breakfast/items"));
+            const breakfastPosts = breakfastSnapshot.docs.map((doc) => ({ ...doc.data(), id: doc.id }));
+            setBreakfastList(breakfastPosts);
+        } catch (error) {
+            console.log("Error fetching breakfast posts:", error);
+        }
+    };
+    const midpoint = Math.ceil(breakfastList.length / 2);
 
     // Split the saladItems array into left and right arrays
-    const leftItems = breakfastItems.slice(0, midpoint);
-    const rightItems = breakfastItems.slice(midpoint);
+    const leftItems = breakfastList.slice(0, midpoint);
+    const rightItems = breakfastList.slice(midpoint);
+
+    useEffect(() => {
+        fetchBreakfastPosts();
+    }, []);
 
     return (
         <div className='breakfast'>

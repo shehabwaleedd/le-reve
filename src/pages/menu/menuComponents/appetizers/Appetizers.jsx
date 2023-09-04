@@ -1,13 +1,31 @@
-import React from 'react'
-import appetizerItems from './Data'
+import React, { useState, useEffect } from 'react'
+import { db } from '../../../../firebase-config';
+import { collection, getDocs } from 'firebase/firestore';
 import './Appetizers.scss'
 
 const Appetizers = () => {
-    const midpoint = Math.ceil(appetizerItems.length / 2);
+
+    const [appetizerLists, setAppetizersList] = useState([]);
+    const fetchAppetizersPosts = async () => {
+        try {
+            const appetizersSnapshot = await getDocs(collection(db, "menu/appetizers/items"));
+            const appetizersPosts = appetizersSnapshot.docs.map((doc) => ({ ...doc.data(), id: doc.id }));
+            setAppetizersList(appetizersPosts);
+        } catch (error) {
+            console.log("Error fetching appetizers posts:", error);
+        }
+    };
+
+    const midpoint = Math.ceil(appetizerLists.length / 2);
 
     // Split the saladItems array into left and right arrays
-    const leftItems = appetizerItems.slice(0, midpoint);
-    const rightItems = appetizerItems.slice(midpoint);
+    const leftItems = appetizerLists.slice(0, midpoint);
+    const rightItems = appetizerLists.slice(midpoint);
+
+    useEffect(() => {
+        fetchAppetizersPosts();
+    }, []);
+
 
     return (
         <div className='appetizers'>
