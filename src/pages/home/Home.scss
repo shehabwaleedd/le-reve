@@ -84,6 +84,11 @@
                     text-transform: capitalize;
                     cursor: pointer;
                     transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+                    &:hover {
+                        background-color: var(--accent-color);
+                        color: var(--container-color);
+                        transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+                    }
                 }
             }
         }
