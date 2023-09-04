@@ -4,6 +4,7 @@ import { AnimatePresence } from 'framer-motion';
 import { useState } from 'react';
 import Navbar from './navbar/Navbar';
 import Routers from './routers/Routers';
+import Footer from './components/footer/Footer';
 function App() {
   const location = useLocation();
   const [navOpen, setNavOpen] = useState(false);
@@ -19,6 +20,7 @@ function App() {
           <Route path='/*' element={<Routers navOpen={navOpen} setNavOpen={setNavOpen} isMobile={isMobile} setIsMobile={setIsMobile} setIsTablet={setIsTablet} isTablet={isTablet} />} />
         </Routes>
       </AnimatePresence>
+      <Footer />
     </div>
   );
 }
