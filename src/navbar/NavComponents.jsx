@@ -3,8 +3,10 @@ import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { FiArrowUpRight } from 'react-icons/fi'
 import "./NavComponents.scss"
+import { useUserAuth } from '../login/authContext/AuthContext'
 
 const NavComponents = () => {
+    const { user } = useUserAuth();
     return (
         <motion.div className="nav__links-links" initial={{ opacity: 0, y: -100, transition: { delay: 0.3, staggerChildren: 3.5, duration: 0.5, ease: [0.42, 0, 0.58, 1] } }} animate={{ opacity: 1, y: 0, transition: { delay: 0.5, staggerChildren: 3.5, duration: 0.7, ease: [0.42, 0, 0.58, 1] } }} exit={{ opacity: 0, y: -500, transition: { delay: 0.3, velocity: 2, staggerChildren: 1.5, duration: 1, ease: [0.42, 0, 0.58, 1] } }}>
             <div className="nav__links_container">
@@ -20,6 +22,10 @@ const NavComponents = () => {
                 <Link className="nav__link" to="/contact">
                     <span>Contact</span>
                 </Link>
+                {user && <Link className="nav__link" to="/admin">
+                    <span>Admin</span>
+                </Link>}
+
                 <div className="nav-footer">
                     <div className="navbar-social-media">
                         <ul>
