@@ -197,7 +197,7 @@ img {
 }
 @media (max-width: 954px) {
   .containered {
-    max-width: 720px;
+    max-width: 800px;
   }
 }
 @media (max-width: 754px) {

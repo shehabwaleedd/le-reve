@@ -68,6 +68,9 @@
                 font-family: 'Chillax-Medium';
                 letter-spacing: 0.1rem;
                 text-transform: capitalize;
+                @media (max-width: 1054px) {
+                    font-size: 0.9rem;
+                }
                 @media (max-width: 954px) {
                     font-size: 0.8rem;
                     padding-left: 1rem;
