@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import "./AdminBreakfast.scss"
-import { db, auth, storage } from '../../../../firebase-config';
-import { collection, query, where, getDocs, deleteDoc, doc } from 'firebase/firestore';
+import { db } from '../../../../firebase-config';
+import { collection, getDocs, deleteDoc, doc } from 'firebase/firestore';
 import { LuEdit2 } from 'react-icons/lu';
+import { useNavigate, Link } from 'react-router-dom';
 
 const AdminBreakfast = () => {
     const [breakfastList, setBreakfastList] = useState([]);
@@ -27,6 +28,7 @@ const AdminBreakfast = () => {
         }
     };
 
+
     useEffect(() => {
         fetchBreakfastPosts();
     }, []);
@@ -41,7 +43,7 @@ const AdminBreakfast = () => {
                                 <h3>{item.name}</h3>
                                 <div className="item__upper_lower">
                                     <button onClick={() => deleteItem(item.id)} className='delete_btn'>X</button>
-                                    <button className='edit_btn'><LuEdit2 /></button>
+                                    <Link to={`/edit/breakfast/${item.id}`} className='edit_btn'><LuEdit2 /></Link>
                                 </div>
                             </div>
                             <span>{item.description}</span>

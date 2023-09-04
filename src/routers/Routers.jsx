@@ -12,6 +12,7 @@ import { Navigate } from 'react-router-dom';
 import { useUserAuth } from "../login/authContext/AuthContext"
 ;
 import Login from '../login/login/Login';
+import AdminEdit from '../pages/admin/adminComponents/adminEdit/AdminEdit';
 const Routers = ({ navOpen }) => {
     const { user } = useUserAuth();
     const location = useLocation();
@@ -26,6 +27,7 @@ const Routers = ({ navOpen }) => {
         { path: '/menu', element: <Menu /> },
         { path: '/login', element: <Login /> },
         { path: "/admin", element: user ? <Admin /> :  <Navigate to="/login" replace /> },
+        { path: "/edit/:section/:id", element: user ? <AdminEdit /> :  <Navigate to="/login" replace /> },
 
 
         { path: '*', element: <NotFound /> },

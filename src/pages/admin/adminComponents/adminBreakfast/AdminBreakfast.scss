@@ -78,6 +78,15 @@
                             font-family: 'Chillax-Medium';
                             transition: all 0.3s ease-in-out;
                         }
+                        a {
+                            border: none;
+                            padding: 0.5rem 1rem;
+                            border-radius: 0.5rem;
+                            font-size: 1rem;
+                            cursor: pointer;
+                            font-family: 'Chillax-Medium';
+                            transition: all 0.3s ease-in-out;
+                        }
                         .delete_btn {
                             background-color: var(--accent-color);
                             color: var(--white-color);
