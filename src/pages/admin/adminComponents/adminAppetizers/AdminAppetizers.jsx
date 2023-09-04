@@ -4,6 +4,7 @@ import { collection, getDocs, deleteDoc, doc } from 'firebase/firestore';
 import { LuEdit2 } from 'react-icons/lu';
 import "./AdminAppetizers.scss"
 import { useNavigate, Link } from 'react-router-dom';
+import Loading from '../../../../components/loading/Loading.tsx';
 
 const AdminAppetizers = () => {
     const [appetizersList, setAppetizersList] = useState([])
@@ -29,6 +30,11 @@ const AdminAppetizers = () => {
         useEffect(() => {
         fetchAppetizersMenu();
     }, []);
+
+    if (!appetizersList) {
+        return <Loading height={80}/>
+    }
+
 
     return (
         <div className='adminbreakfast'>

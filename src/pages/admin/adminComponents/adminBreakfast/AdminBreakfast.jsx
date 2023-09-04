@@ -4,6 +4,7 @@ import { db } from '../../../../firebase-config';
 import { collection, getDocs, deleteDoc, doc } from 'firebase/firestore';
 import { LuEdit2 } from 'react-icons/lu';
 import { useNavigate, Link } from 'react-router-dom';
+import Loading from '../../../../components/loading/Loading.tsx';
 
 const AdminBreakfast = () => {
     const [breakfastList, setBreakfastList] = useState([]);
@@ -32,6 +33,9 @@ const AdminBreakfast = () => {
     useEffect(() => {
         fetchBreakfastPosts();
     }, []);
+    if (!breakfastList) {
+        return <Loading height={80} />
+    }
     return (
         <div className='adminbreakfast'>
             <div className="adminbreakfast__container">
