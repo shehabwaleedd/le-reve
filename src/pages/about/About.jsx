@@ -7,6 +7,7 @@ import AboutBeach from './aboutComponents/aboutBeach/AboutBeach'
 import AboutBeachLower from './aboutComponents/aboutBeachLower/AboutBeachLower'
 import AboutCrew from '../../components/aboutCrew/AboutCrew'
 import AboutCrewLower from '../../components/aboutCrewLower/AboutCrewLower'
+import Marquee from '../../components/marquee/Marquee'
 
 const About = () => {
     return (
@@ -14,6 +15,7 @@ const About = () => {
             <div className="about__container">
                 <AboutUs />
                 <LowerAboutUs />
+                <Marquee />
                 <AboutBoss />
                 <AboutBossLower />
                 <AboutCrew />
