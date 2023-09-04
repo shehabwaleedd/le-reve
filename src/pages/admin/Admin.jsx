@@ -4,6 +4,7 @@ import { useState } from 'react';
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
 import { useUserAuth } from '../../login/authContext/AuthContext';
 import AdminBreakfast from './adminComponents/adminBreakfast/AdminBreakfast';
+import AdminAppetizers from './adminComponents/adminAppetizers/AdminAppetizers';
 
 const Admin = () => {
 
@@ -69,7 +70,7 @@ const Admin = () => {
                     <div className="admin__right__container">
                         {breakfastOpen && ( <AdminBreakfast /> )}
                         {saladsOpen && ( <AdminBreakfast /> )}
-                        {appetizersOpen && ( <AdminBreakfast /> )}
+                        {appetizersOpen && ( <AdminAppetizers /> )}
                         {mainCourseOpen && ( <AdminBreakfast /> )}
                     </div>
                 </div>
