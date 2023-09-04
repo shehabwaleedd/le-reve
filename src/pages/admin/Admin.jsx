@@ -1,8 +1,6 @@
 import React from 'react'
 import "./Admin.scss"
-import { useEffect, useState } from 'react';
-import { db, auth, storage } from '../../firebase-config';
-import { collection, query, where, getDocs } from 'firebase/firestore';
+import { useState } from 'react';
 import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
 import { useUserAuth } from '../../login/authContext/AuthContext';
 import AdminBreakfast from './adminComponents/adminBreakfast/AdminBreakfast';
