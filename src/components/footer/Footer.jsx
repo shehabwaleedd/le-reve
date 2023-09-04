@@ -49,7 +49,7 @@ const Footer = () => {
                 </div>
                 <div className="footer__right">
                     <div className="footer__right_top">
-                        <Link to="/privacy"><h2>Privacy Policy</h2></Link>
+                        <h2>Social Media</h2>
                     </div>
                     <div className="footer__right_bottom">
                         <ul>
