@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import "./AdminBreakfast.scss"
 import { db, auth, storage } from '../../../../firebase-config';
-import { collection, query, where, getDocs } from 'firebase/firestore';
+import { collection, query, where, getDocs, deleteDoc, doc } from 'firebase/firestore';
 import { LuEdit2 } from 'react-icons/lu';
 
 const AdminBreakfast = () => {
@@ -17,6 +17,15 @@ const AdminBreakfast = () => {
         }
     };
 
+    const deleteItem = async (itemId) => {
+        try {
+            await deleteDoc(doc(db, "menu/breakfast/items", itemId));
+            // After deleting, fetch the updated list
+            fetchBreakfastPosts();
+        } catch (error) {
+            console.log("Error deleting item:", error);
+        }
+    };
 
     useEffect(() => {
         fetchBreakfastPosts();
@@ -31,7 +40,7 @@ const AdminBreakfast = () => {
                             <div className="content__item_upper">
                                 <h3>{item.name}</h3>
                                 <div className="item__upper_lower">
-                                    <button className='delete_btn'>X</button>
+                                    <button onClick={() => deleteItem(item.id)} className='delete_btn'>X</button>
                                     <button className='edit_btn'><LuEdit2 /></button>
                                 </div>
                             </div>

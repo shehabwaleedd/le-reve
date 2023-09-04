@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import './Breakfast.scss';
 import { db } from '../../../../firebase-config';
-import { collection,  getDocs } from 'firebase/firestore';
+import { collection, getDocs, doc, deleteDoc } from 'firebase/firestore';
 
 const Breakfast = () => {
     const [breakfastList, setBreakfastList] = useState([]);
@@ -20,6 +20,7 @@ const Breakfast = () => {
     // Split the saladItems array into left and right arrays
     const leftItems = breakfastList.slice(0, midpoint);
     const rightItems = breakfastList.slice(midpoint);
+
 
     useEffect(() => {
         fetchBreakfastPosts();
