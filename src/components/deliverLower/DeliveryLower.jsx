@@ -1,6 +1,6 @@
 import React from 'react'
 import "./DeliveryLower.scss"
-import img from "../../assets/epicurrence-ITxG2yay1ak-unsplash.jpg"
+import img from "../../assets/chef2.jpg"
 
 const DeliveryLower = () => {
     return (
@@ -20,7 +20,9 @@ const DeliveryLower = () => {
                     </ul>
                 </div>
                 <div className="deliveryLower__right">
-                    <img src={img} alt="" />
+                    <div className="deliveryLower__right-img">
+                        <img src={img} alt="" />
+                    </div>
                 </div>
             </div>
         </div>

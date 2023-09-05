@@ -4,7 +4,7 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 30vh;
+    height: 40vh;
     border-bottom: 1px solid var(--text-color);
 
     @media (max-width: 954px) {
@@ -18,7 +18,7 @@
         align-items: flex-end;
         justify-content: flex-end;
         width: 100%;
-        height: 30vh;
+        height: 40vh;
         border-right: 1px solid var(--text-color);
         border-left: 1px solid var(--text-color);
 
@@ -39,22 +39,19 @@
             width: 100%;
             height: 100%;
             position: relative;
-
             @media (max-width: 954px) {
                 height: 100%;
             }
 
             ul {
-                width: 100%;
-                height: 100%;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
                 align-items: flex-start;
                 gap: 1rem;
-
+                
                 li {
-                    padding-left: 2rem;
+                    padding-left: 1rem;
                     width: 100%;
                     border-bottom: 1px solid var(--text-color);
 
@@ -93,33 +90,34 @@
         .deliveryLower__right {
             display: flex;
             flex-direction: column;
-            align-items: flex-start;
-            justify-content: flex-end;
             width: 100%;
-            height: 30vh;
+            height: 40vh;
             position: relative;
 
             @media (max-width: 954px) {
                 height: 100%;
             }
 
-            img {
+            .deliveryLower__right-img {
                 width: 100%;
                 height: 100%;
-                object-fit: cover;
-                object-position: 50% 80%;
-                filter: contrast(54%) invert(11%) saturate(90%) sepia(29%);
+                position: relative;
+                overflow: hidden;
 
-                @media (max-width: 1450px) {
-                    object-position: 30% 45%;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    object-position: 50% 90%;
+                    filter: contrast(54%) invert(11%) saturate(90%) sepia(29%);
+
+                    @media (max-width: 1000px) {
+                        -webkit-filter: hue-rotate(0deg);
+                        filter: contrast(100%) invert(0%) saturate(100%) sepia(0%);
+                    }
+
+                    transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
                 }
-
-                @media (max-width: 1000px) {
-                    -webkit-filter: hue-rotate(0deg);
-                    filter: contrast(100%) invert(0%) saturate(100%) sepia(0%);
-                }
-
-                transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
             }
 
             &:hover img {
