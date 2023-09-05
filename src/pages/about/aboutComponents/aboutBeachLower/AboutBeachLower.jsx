@@ -1,6 +1,6 @@
 import React from 'react'
 import shape from "../../../../assets/shape.png"
-import surv from "../../../../assets/surv.jpg"
+import surv from "../../../../assets/surv.webp"
 import "./AboutBeachLower.scss"
 
 const AboutBeachLower = () => {

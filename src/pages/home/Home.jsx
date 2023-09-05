@@ -1,6 +1,6 @@
 import React from 'react'
 import './Home.scss'
-import main from "../../assets/main.jpg"
+import main from "../../assets/main.webp"
 import { Link } from 'react-router-dom'
 const Home = () => {
     return (

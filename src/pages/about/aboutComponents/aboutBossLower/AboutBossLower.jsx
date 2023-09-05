@@ -1,6 +1,6 @@
 import React from 'react'
 import "./AboutBossLower.scss"
-import chef from "../../../../assets/main.jpg"
+import chef from "../../../../assets/main.webp"
 const AboutBossLower = () => {
     return (
         <div className='aboutBossLower'>

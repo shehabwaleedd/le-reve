@@ -1,6 +1,6 @@
 import React from 'react'
 import "./DeliveryLower.scss"
-import img from "../../assets/chef2.jpg"
+import img from "../../assets/chef2.webp"
 
 const DeliveryLower = () => {
     return (

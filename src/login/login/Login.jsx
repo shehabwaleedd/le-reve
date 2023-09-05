@@ -4,7 +4,7 @@ import { useNavigate } from 'react-router-dom'
 import { useUserAuth } from '../authContext/AuthContext';
 import { Link } from 'react-router-dom'
 import './Login.scss'
-import chef from "../../assets/main.jpg"
+import chef from "../../assets/main.webp"
 
 function Login() {
 

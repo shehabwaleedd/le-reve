@@ -1,6 +1,6 @@
 import React from 'react'
 import "./ContactsLower.scss"
-import contact1 from "../../assets/contact1.jpg"
+import contact1 from "../../assets/contact1.webp"
 
 const ContactsLower = () => {
     return (
