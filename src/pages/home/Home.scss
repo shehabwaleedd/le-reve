@@ -3,22 +3,25 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 78vh;
+    height: 90vh;
     border-bottom: 1px solid var(--border-color);
     width: 100%;
+
     @media (max-width: 454px) {
         width: 100%;
         height: 100%;
     }
+
     .home__container {
         display: grid;
-        grid-template-columns:  1fr 2fr;
+        grid-template-columns: 1fr 2fr;
         align-items: center;
         justify-content: flex-start;
         width: 100%;
-        height: 78vh;
+        height: 90vh;
         border-right: 1px solid var(--text-color);
         border-left: 1px solid var(--text-color);
+
         @media (max-width: 454px) {
             display: flex;
             flex-direction: column;
@@ -27,21 +30,26 @@
             width: 100%;
             height: 100%;
         }
+
         .home__left {
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: space-between;
-            width: 100%;    
-            height: 78vh;
+            width: 100%;
+            height: 90vh;
+
             .home__left-container {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
                 justify-content: center;
                 width: 100%;
-                height: 78vh;
+                height: 90vh;
                 padding-left: 1.7rem;
+                @media (max-width: 756px) and (min-width: 600px) {
+                    padding-left: 0.7rem;
+                }
                 span {
                     font-size: 1rem;
                     color: var(--title-color);
@@ -51,6 +59,7 @@
                     margin-bottom: 1rem;
                     width: 95%;
                 }
+
                 h1 {
                     font-size: 3rem;
                     color: var(--accent-color);
@@ -59,9 +68,14 @@
                     letter-spacing: 0.2rem;
                     text-transform: capitalize;
                     padding-top: 6rem;
- 
+                    @media (max-width: 756px) and (min-width: 600px) {
+                        font-size: 2rem;
+                    }
+
+
                 }
             }
+
             .book__now {
                 display: flex;
                 align-items: center;
@@ -70,9 +84,11 @@
                 height: 100%;
                 position: relative;
                 bottom: -5rem;
+
                 @media (max-width: 1468px) {
                     bottom: 0rem;
                 }
+
                 button {
                     padding: 1rem 2rem;
                     border: 0.5px solid var(--text-color);
@@ -84,6 +100,7 @@
                     text-transform: capitalize;
                     cursor: pointer;
                     transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+
                     &:hover {
                         background-color: var(--accent-color);
                         color: var(--container-color);
@@ -92,33 +109,39 @@
                 }
             }
         }
+
         .home__right {
             display: flex;
             flex-direction: column;
             justify-content: flex-start;
             align-items: flex-start;
             width: 100%;
-            height: 78vh;
+            height: 90vh;
+
             img {
                 width: 100%;
                 height: 100%;
-                object-position: 70% 65%; 
+                object-position: 70% 65%;
                 object-fit: cover;
                 -webkit-filter: hue-rotate(304deg);
                 filter: contrast(54%) invert(11%) saturate(90%) sepia(29%);
+
                 @media (max-width: 1450px) {
-                    object-position: 30% 45%; 
+                    object-position: 30% 45%;
                 }
+
                 @media (max-width: 1000px) {
                     -webkit-filter: hue-rotate(0deg);
-                filter: contrast(100%) invert(0%) saturate(100%) sepia(0%); 
+                    filter: contrast(100%) invert(0%) saturate(100%) sepia(0%);
                 }
-                transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);                
+
+                transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
             }
+
             &:hover img {
-                transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);  
+                transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
                 -webkit-filter: hue-rotate(0deg);
-                filter: contrast(100%) invert(0%) saturate(100%) sepia(0%); 
+                filter: contrast(100%) invert(0%) saturate(100%) sepia(0%);
             }
         }
     }
