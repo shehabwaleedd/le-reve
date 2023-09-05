@@ -10,11 +10,10 @@ import Menu from '../pages/menu/Menu';
 import Admin from '../pages/admin/Admin';
 import { Navigate } from 'react-router-dom';
 import { useUserAuth } from "../login/authContext/AuthContext"
-;
 import Login from '../login/login/Login';
 import AdminEdit from '../pages/admin/adminComponents/adminEdit/AdminEdit';
 import AdminAddNewItem from '../pages/admin/adminComponents/adminAddNewItem/AdminAddNewItem';
-import AdminAdd from '../pages/admin/adminComponents/adminAdd/AdminAdd';
+
 const Routers = ({ navOpen }) => {
     const { user } = useUserAuth();
     const location = useLocation();
