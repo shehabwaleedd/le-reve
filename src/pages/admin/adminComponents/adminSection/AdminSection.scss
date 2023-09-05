@@ -58,7 +58,7 @@
                     background: rgba(255, 247, 243, 0.31);
                     border-radius: 16px;
                     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-                    backdrop-filter: blur(5.2px);
+                    backdrop-filter: blur(7.2px);
                     -webkit-backdrop-filter: blur(5.2px);
                     border: 1px solid rgba(255, 247, 243, 0.3);
                     width: 100%;
@@ -73,10 +73,12 @@
                         height: 50%;
                         gap: 1rem;
                         button {
+                            width: 10rem;
+                            height: 3rem;
                             border: none;
                             padding: 0.5rem 1rem;
                             border-radius: 0.5rem;
-                            font-size: 1rem;
+                            font-size: 1.4rem;
                             cursor: pointer;
                             font-family: 'Chillax-Medium';
                             transition: all 0.3s ease-in-out;
