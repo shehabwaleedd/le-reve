@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { db } from '../../../../firebase-config';
 import { collection, getDocs } from 'firebase/firestore';
-import MenuItem from './menuItem/MenuItem';
+
 import "./MenuSection.scss"
 const MenuSections = ({ section }) => {
     const [items, setItems] = useState([]);

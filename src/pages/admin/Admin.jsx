@@ -54,8 +54,8 @@ const Admin = () => {
                 const sectionSnapshotItems = await getDocs(collection(db, `menu/${sectionId}/items`));
                 const sectionSnapshotItem = await getDocs(collection(db, `menu/${sectionId}/item`));
                 const sectionItems = [
-                  ...sectionSnapshotItems.docs.map((doc) => ({ id: doc.id, ...doc.data() })),
-                  ...sectionSnapshotItem.docs.map((doc) => ({ id: doc.id, ...doc.data() })),
+                    ...sectionSnapshotItems.docs.map((doc) => ({ id: doc.id, ...doc.data() })),
+                    ...sectionSnapshotItem.docs.map((doc) => ({ id: doc.id, ...doc.data() })),
                 ];
 
                 // Update the sectionsData state with the new section's data
