@@ -1,5 +1,5 @@
 .loader {
-    background-color: var(--body-color);
+    background-color: var(--background-color);
     display: flex;
     justify-content: center;
     align-items: center;

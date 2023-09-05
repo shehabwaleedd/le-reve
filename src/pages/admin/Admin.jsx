@@ -1,77 +1,98 @@
 import React from 'react'
 import "./Admin.scss"
-import { useState } from 'react';
-import { ref, uploadBytes, getDownloadURL } from "firebase/storage";
-import { useUserAuth } from '../../login/authContext/AuthContext';
-import AdminBreakfast from './adminComponents/adminBreakfast/AdminBreakfast';
-import AdminAppetizers from './adminComponents/adminAppetizers/AdminAppetizers';
+import { useState, useEffect } from 'react';
+import { db } from '../../firebase-config';
+import { collection, getDocs, deleteDoc, doc } from 'firebase/firestore';
+import { Link } from 'react-router-dom';
+import AdminSection from "./adminComponents/adminSection/AdminSection"
 
 const Admin = () => {
+    const [selectedSection, setSelectedSection] = useState(null);
+    const [sections, setSections] = useState([]);
+    const [sectionsData, setSectionsData] = useState({}); // Store data for all sections
 
-    const [breakfastOpen, setBreakfastOpen] = useState(true);
-    const [saladsOpen, setSaladsOpen] = useState(false);
-    const [appetizersOpen, setAppetizersOpen] = useState(false);
-    const [mainCourseOpen, setMainCourseOpen] = useState(false);
-    const { user } = useUserAuth();
+    // Function to fetch sections
+    const fetchSections = async () => {
+        try {
+            const sectionsSnapshot = await getDocs(collection(db, 'menu'));
+            const sectionsData = sectionsSnapshot.docs.map((doc) => ({ id: doc.id, ...doc.data() }));
+            setSections(sectionsData);
+        } catch (error) {
+            console.error('Error fetching menu sections:', error);
+        }
+    };
 
+    // Call fetchSections when the component mounts
+    useEffect(() => {
+        fetchSections();
+    }, []);
 
-    const handleBreakfastOpen = () => {
-        setBreakfastOpen(true);
-        setSaladsOpen(false);
-        setAppetizersOpen(false);
-        setMainCourseOpen(false);
+    const handleDeleteItem = async (itemId) => {
+        try {
+            // Determine the section of the item based on the selected section
+            const section = selectedSection;
+            await deleteDoc(doc(db, `menu/${section}/items`, itemId));
+
+            // Update the local sectionsData to reflect the deletion
+            setSectionsData((prevState) => {
+                const updatedSectionData = {
+                    ...prevState,
+                    [section]: prevState[section].filter((item) => item.id !== itemId),
+                };
+                return updatedSectionData;
+            });
+        } catch (error) {
+            console.log("Error deleting item:", error);
+        }
+    };
+    const handleSectionClick = async (sectionId) => {
+        setSelectedSection(sectionId);
+
+        // Check if the section data is already loaded
+        if (!sectionsData[sectionId]) {
+            try {
+                const sectionSnapshotItems = await getDocs(collection(db, `menu/${sectionId}/items`));
+                const sectionSnapshotItem = await getDocs(collection(db, `menu/${sectionId}/item`));
+                const sectionItems = [
+                  ...sectionSnapshotItems.docs.map((doc) => ({ id: doc.id, ...doc.data() })),
+                  ...sectionSnapshotItem.docs.map((doc) => ({ id: doc.id, ...doc.data() })),
+                ];
+
+                // Update the sectionsData state with the new section's data
+                setSectionsData((prevState) => ({
+                    ...prevState,
+                    [sectionId]: sectionItems,
+                }));
+            } catch (error) {
+                console.error(`Error fetching data for section ${sectionId}:`, error);
+            }
+        }
     }
-
-    const handleSaladsOpen = () => {
-        setBreakfastOpen(false);
-        setSaladsOpen(true);
-        setAppetizersOpen(false);
-        setMainCourseOpen(false);
-    }
-
-    const handleAppetizersOpen = () => {
-        setBreakfastOpen(false);
-        setSaladsOpen(false);
-        setAppetizersOpen(true);
-        setMainCourseOpen(false);
-    }
-
-    const handleMainCourseOpen = () => {
-        setBreakfastOpen(false);
-        setSaladsOpen(false);
-        setAppetizersOpen(false);
-        setMainCourseOpen(true);
-    }
-
-
     return (
         <section className='admin'>
             <div className="admin__container containered">
                 <div className="admin__left">
                     <h1>Admin Dashboard</h1>
-                    <div className="admin__left__container">
-                        <ul>
-                            <li onClick={handleBreakfastOpen}>
-                                <h3>Breakfast</h3>
-                            </li>
-                            <li onClick={handleSaladsOpen}>
-                                <h3>Salads</h3>
-                            </li>
-                            <li onClick={handleAppetizersOpen}>
-                                <h3>Appetizers</h3>
-                            </li>
-                            <li onClick={handleMainCourseOpen}>
-                                <h3>Main Course</h3>
-                            </li>
+                    <div className="admin__left_container">
+                        <Link to="/admin/addNewItem">
+                            <span>Add New Item</span>
+                        </Link>
+                        <ul >
+                            {sections.map((section) => (
+                                <li key={section.id} onClick={() => handleSectionClick(section.id)}>
+                                    <h3>{section.id}</h3>
+                                </li>
+                            ))}
                         </ul>
                     </div>
                 </div>
                 <div className="admin__right">
                     <div className="admin__right__container">
-                        {breakfastOpen && ( <AdminBreakfast /> )}
-                        {saladsOpen && ( <AdminBreakfast /> )}
-                        {appetizersOpen && ( <AdminAppetizers /> )}
-                        {mainCourseOpen && ( <AdminBreakfast /> )}
+                        {selectedSection === null && <p>Select a section to view its content.</p>}
+                        {selectedSection && sectionsData[selectedSection] ? (
+                            // Render content if the section and its data exist
+                            <AdminSection sectionData={sectionsData[selectedSection]} onDeleteItem={handleDeleteItem} section={selectedSection} />
+                        ) : null}
                     </div>
                 </div>
             </div>

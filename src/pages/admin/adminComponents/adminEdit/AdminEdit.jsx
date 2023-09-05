@@ -19,17 +19,23 @@ const AdminEdit = () => {
                 if (itemDocSnapshot.exists()) {
                     const itemData = itemDocSnapshot.data();
                     setItemData(itemData);
+                    // Set the initial value of updatedItemData with itemData
+                    setUpdatedItemData(itemData);
                 } else {
                     // Handle item not found
                 }
             } catch (error) {
-                console.log("Error fetching item to edit:", error);
+                console.log('Error fetching item to edit:', error);
             }
         };
 
         fetchItemToEdit();
     }, [section, id]);
-
+    
+    if (!section || !id) {
+        navigate('/admin'); // Redirect to the admin page if the parameters are missing
+        return null; // Render nothing
+    }
 
     const handleEditClick = async () => {
         try {
@@ -38,7 +44,7 @@ const AdminEdit = () => {
             navigate(`/admin`);
             // Handle successful edit, e.g., show a confirmation message
         } catch (error) {
-            console.log("Error editing item:", error);
+            console.log('Error editing item:', error);
         }
     };
 

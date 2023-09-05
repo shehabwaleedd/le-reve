@@ -13,6 +13,8 @@ import { useUserAuth } from "../login/authContext/AuthContext"
 ;
 import Login from '../login/login/Login';
 import AdminEdit from '../pages/admin/adminComponents/adminEdit/AdminEdit';
+import AdminAddNewItem from '../pages/admin/adminComponents/adminAddNewItem/AdminAddNewItem';
+import AdminAdd from '../pages/admin/adminComponents/adminAdd/AdminAdd';
 const Routers = ({ navOpen }) => {
     const { user } = useUserAuth();
     const location = useLocation();
@@ -28,8 +30,7 @@ const Routers = ({ navOpen }) => {
         { path: '/login', element: <Login /> },
         { path: "/admin", element: user ? <Admin /> :  <Navigate to="/login" replace /> },
         { path: "/edit/:section/:id", element: user ? <AdminEdit /> :  <Navigate to="/login" replace /> },
-
-
+        { path: "/admin/addNewItem", element: user ? <AdminAddNewItem /> :  <Navigate to="/login" replace /> },
         { path: '*', element: <NotFound /> },
     ];
 

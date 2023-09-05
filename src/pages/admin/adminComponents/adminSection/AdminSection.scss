@@ -1,11 +1,11 @@
-.adminbreakfast {
+.adminSection {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: 100%;
     height: 100%;
-    .adminbreakfast__container {
+    .adminSection__container {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -28,7 +28,7 @@
                 width: 100%;
             }
         }
-        .adminbreakfast__container__content {
+        .adminSection__container__content {
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-gap: 2rem;
@@ -38,7 +38,7 @@
                 grid-template-columns: 1fr;
                 grid-gap: 1rem;
             }
-            .adminbreakfast__container__content__item {
+            .adminSection__container__content__item {
                 display: flex;
                 flex-direction: column;
                 align-items: flex-start;
