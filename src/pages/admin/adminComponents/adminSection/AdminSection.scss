@@ -48,7 +48,7 @@
                 padding: 1rem;
                 gap: 1rem;
                 .deleteConfirmation {
-                    position: absolute;
+                    position: fixed;
                     top: 0;
                     left: 0;
                     display: flex;
@@ -65,21 +65,13 @@
                     height: 100%;
                     gap: 1rem;
                     z-index: 99999;
-                    @media (max-width: 956px) {
-                        position: fixed;
-                    }
                     p {
                         font-size: 1.5rem;
                         color: var(--accent-color);
                         font-family: 'Chillax-Medium';
                         text-transform: capitalize;
                         width: 100%;
-                        text-align: left;
-                        @media (max-width: 954px) {
-                            font-size: 1.5rem;
-                            text-align: center;
-                            width: 100%;
-                        }
+                        text-align: center;
                     }
                     .deleteConfirmation__btns {
                         display: flex;
