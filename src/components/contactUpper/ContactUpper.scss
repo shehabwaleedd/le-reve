@@ -7,11 +7,11 @@
     height: 30vh;
     border-bottom: 1px solid var(--text-color);
     @media (max-width: 454px) {
-        height: 45vh;
-        padding-top: 4rem;
+        height: 100%;
+        padding-top: 0;
     }
     @media (max-width: 376px) {
-        height: 60vh;
+        height: 100%;
         padding-top: 0;
     }
     .contactUpper__container {
@@ -42,6 +42,7 @@
             @media (max-width: 454px) {
                 height: 100%;
                 align-content: center;
+                
             }
             h2 {
                 font-size: 2rem;
