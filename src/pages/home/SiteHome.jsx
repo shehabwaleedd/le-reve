@@ -10,6 +10,7 @@ import ContactsUpper from '../../components/contactsUpper/ContactsUpper'
 import ContactsLower from '../../components/contactsLower/ContactsLower'
 import DeliveryUpper from '../../components/deliveryUpper/DeliveryUpper'
 import DeliveryLower from '../../components/deliverLower/DeliveryLower'
+import FAQs from '../../components/faqs/FAQs'
 
 const SiteHome = () => {
     return (
@@ -25,6 +26,7 @@ const SiteHome = () => {
             <ContactLower />
             <ContactsUpper />
             <ContactsLower />
+            <FAQs />
         </main>
     )
 }
