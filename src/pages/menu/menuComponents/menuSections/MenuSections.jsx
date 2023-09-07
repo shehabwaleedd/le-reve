@@ -22,6 +22,7 @@ const MenuSections = ({ section }) => {
     // Split the saladItems array into left and right arrays
     const leftItems = items.slice(0, midpoint);
     const rightItems = items.slice(midpoint);
+
     return (
         <div className="menu__content containered">
             <h2>{section.id}</h2>
@@ -32,7 +33,7 @@ const MenuSections = ({ section }) => {
                             <h3>{item.name}</h3>
                             <div className='menu__formula_lower'>
                                 <span>{item.description}</span>
-                                <span>{item.price}</span>
+                                <span>SR {item.price}</span>
                             </div>
                         </div>
                     ))}
@@ -43,7 +44,7 @@ const MenuSections = ({ section }) => {
                             <h3>{item.name}</h3>
                             <div className='menu__formula_lower'>
                                 <span>{item.description}</span>
-                                <span>{item.price}</span>
+                                <span>SR {item.price}</span>
                             </div>
                         </div>
                     ))}
