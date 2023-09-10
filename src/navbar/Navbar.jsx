@@ -78,7 +78,6 @@ const Navbar = ({ setNavOpen, navOpen, setIsMobile, setIsTablet }) => {
 
                 </div>
                 <div className="nav__mobile_toggle" style={{ borderRight: navOpen ? " 1px solid var(--container-color)" : " 1px solid var(--text-color)" }}>
-                    <span style={{ color: navOpen ? "var(--container-color)" : "var(--title-color)" }}>Menu</span>
                     <svg className={`ham hamRotate ham1 ${navOpen ? 'active' : ''}`} viewBox="0 0 100 100" width="100" height="50" onClick={() => setNavOpen(!navOpen)}>
                         <path
                             className={`${navOpen ? "line open" : "line"} top`}

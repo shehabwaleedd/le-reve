@@ -39,12 +39,6 @@
             width: 100%;
             height: 100%;
             position: relative;
-            @media (max-width: 954px) {
-                height: 100%;
-            }
-            @media (max-width: 454px) {
-                height: 105%;
-            }
             ul {
                 display: flex;
                 flex-direction: column;
@@ -65,7 +59,6 @@
                             padding-top: 2rem;
                         }
                     }
-
                     h2 {
                         font-size: 1.5rem;
                         color: var(--accent-color);
@@ -79,7 +72,6 @@
 
                         @media (max-width: 954px) {
                             font-size: 1.5rem;
-                            width: 100%;
                         }
                     }
                 }
@@ -94,12 +86,8 @@
             position: relative;
 
             @media (max-width: 954px) {
-                height: 100%;
+                height: 30vh;
             }
-            @media (max-width: 454px) {
-                height: 105%;
-            }
-
             .deliveryLower__right-img {
                 width: 100%;
                 height: 100%;
@@ -124,7 +112,6 @@
                 -webkit-filter: hue-rotate(0deg);
                 filter: contrast(100%) invert(0%) saturate(100%) sepia(0%);
             }
-
         }
     }
 }

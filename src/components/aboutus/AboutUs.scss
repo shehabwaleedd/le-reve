@@ -8,10 +8,7 @@
         height: 45vh;
     }
     @media (max-width: 1024px) {
-        height: 50vh;
-    }
-    @media (max-width: 376px) {
-        height: 60vh;
+        height: 100%;
     }
     .aboutus__container {
         display: grid;
