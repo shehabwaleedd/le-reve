@@ -8,11 +8,11 @@
     border-bottom: 1px solid var(--text-color);
     @media (max-width: 454px) {
         height: 100%;
-        padding-top: 0;
+        padding-top: 4.5rem;
     }
     @media (max-width: 376px) {
         height: 100%;
-        padding-top: 0;
+        padding-top: 2.5rem;
     }
     .contactUpper__container {
         display: grid;
