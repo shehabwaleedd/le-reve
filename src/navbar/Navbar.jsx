@@ -3,7 +3,7 @@ import { useEffect } from 'react'
 import { Link, useLocation } from 'react-router-dom'
 import { AnimatePresence, motion } from 'framer-motion'
 import './Navbar.scss'
-import logo from "../assets/minimal-logo-for-coconut-s-tree- (2).svg"
+import logo from "../assets/logo.png"
 import NavComponents from './NavComponents'
 import { useUserAuth } from '../login/authContext/AuthContext'
 const Navbar = ({ setNavOpen, navOpen, setIsMobile, setIsTablet }) => {
